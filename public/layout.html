@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+<title> Mafia</title>
+<link href="./layout.css" rel="stylesheet" type="text/css">
+  </head>
+  <body ng-app="mainApp">
+    <div class="header">
+     <h1>به مافیا خوش آمدید</h1>
+    </div>
+    <div class="right_col">
+      <div class="status">
+    
+	<user-status></user-status>
+      </div>
+      <div class="player_list" ng-controller="basic">
+
+        <online-users></online-users>
+      </div>
+    </div>
+    <div class="center_col" >
+       <div id="login" ng-controller="basic">             
+      
+   
+      
+      	<form ng-if="!Auth.authorized" name="loginForm" style="background-color: #fff; position:relative;float:right; padding:20px; magin:20px; width:calc(100% - 140px);margin-top:30px;	 margin-right: 50px;" 
+      ng-submit="login(credentials)" novalidate>
+
+  <label for="username">Username:</label>
+  <input type="text" id="username"
+         ng-model="credentials.username">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password"
+         ng-model="credentials.password">
+
+  <button type="submit">Login</button>
+
+	</form>
+       </div>
+       <tasks></tasks>
+       <br>
+       <current-affairs></current-affairs>
+       <say-something></say-something>
+       <bet-something></bet-something>
+    </div>
+    <div class="left_col">
+      <div class="list_menu"> منوی فهرست ها</div>
+      <div class="left_list">فهرست ها</div>
+    </div>
+   
+    <script
+src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+    </script>
+     <script src="./js/mainapp.js"></script>
+  </body>
+  
+</html>
