@@ -1,8 +1,8 @@
 
-<div ng-if="$ctrl.Auth.authorized" style="background-color: #fff; position:relative;float:right; padding:20px; magin:20px; width:calc(100% - 140px);	 margin-right: 50px;">
+<div ng-if="$ctrl.Auth.authorized" class="center_box">
 
-  <div  ng-repeat="task in $ctrl.Info.tasks" style="width:calc(100% - 40px); padding:5px;
-padding-left:20px;padding-right:20px; margin-bottom: 20px; background-color: #fff; position:relative;float:right; text-align:right; direction:rtl;">
+  <div  ng-repeat="task in $ctrl.Info.tasks" style=" padding:5px;
+ text-align:right; direction:rtl;">
   <!--  {{task.name}} {{task.a}} {{task.thing}} -->
     <sample-task data="task"></sample-task>
     </div>

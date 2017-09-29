@@ -12,7 +12,7 @@ html, body
     margin: 0;
 }
 .header{
-    width:calc(100% - 40px); min-height:60px;position:relative; background-color: #aaa;
+    width:calc(100% - 40px); min-height:60px;position:relative; background-color: #eee;
     text-align:right;padding:20px;
 }
 .right_col {width:200px;height:calc(100% - 150px);position:relative; float: right; background-color:#fff;text-align:right;}
@@ -22,3 +22,8 @@ html, body
 .player_list{width:100%; height:calc(100% - 300px); position:relative;float:right;background-color:#fff;text-align:right;}
 .list_menu{width:100%;height:30pt; position:relative; float:right; background-color:#ccc; text-align:right;color:#000;}
 .left_list{width:100%;height:calc(100% - 30pt); position:relative; float:right; background-color:#fff; text-align:right;}
+.menu_item {position:relative;float:right;background-color: #cfc;min-width:100px;margin-left:3px;padding:5px}
+.menu_item:hover {background-color: #fcf;}
+.center_box{background-color: #fff; position:relative;float:right; padding:20px; margin:5px; width:calc(100% - 140px);	 margin-right: 50px;}
+.message_box{background-color:white;padding:5px;margin:2px;}
+
