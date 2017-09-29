@@ -77,7 +77,7 @@ App.post '/update' do
     o[:gender]=Game::Player.players[user].gender
     online.push(o)
   end
-  puts online
+ # puts online
   
   data=JSON.parse(request.body.read,:symbolize_names => true)
  # puts "update Data: "+data.to_s

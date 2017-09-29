@@ -137,9 +137,11 @@ module Game
       if (coin ==1) then
         message=child_self.message_win(@options[:thing].to_s);
         money=@options[:thing].to_i
+        winner=:b
       else
          message=child_self.message_lose(@options[:thing].to_s);
-        money=-@options[:thing].to_i
+         money=-@options[:thing].to_i
+         winner=:a
       end
       puts  "BetSomething says: "+message.to_s
       Player.players[@options[:b]].resources[child_self.on_what]+=money
@@ -147,8 +149,12 @@ module Game
       
       finally
       
+      if (child_self==BetSomething) then
+        return message
+      else
+        return {code: winner, text: message}
+      end
       
-     message
     end
    
     def reject(o,child_self=BetSomething)
@@ -203,8 +209,63 @@ module Game
       end
       cond
     end
+    def self.message_win_a(thing,b)
+      message="شما "
+      message+=thing.to_s
+      message+="تومان از"
+      message+=b.to_s
+      message+=" بردید"
+        
+    end
+     def self.message_lose_a(thing,b)
+      message="شما "
+      message+=thing.to_s
+      message+="تومان به"
+      message+=b.to_s
+      message+=" باختید"
+        
+    end
+    def accept o,child_self=BetSomethingBetter
+      message=super o,child_self
+      if (message[:winner]==:a) then
+        notif=child_self.message_win_a @options[:thing],@options[:b]
+      else
+        notif=child_self.message_lose_a  @options[:thing],@options[:b]
+      end
+     
+      Notification.new({to: @options[:a],message: notif,auth:"BetSomethingBetter#accept"},:commit)
+      message[:text]
+    end
+    def reject
+    end
   end
-
+  class Notification < Event
+     def self.requirements; {to: "user",message: "string",auth: "string"} end
+    def self.stateless; false; end
+      def self.hash; "notification"; end
+      EventHash[self.hash]=self
+        def initialize(o,commit,child_self=Notification)
+      
+     
+      super(o,commit,child_self)
+      Player.players[o[:to]].add_task @id,{id: @id,name: child_self.hash,stage: 0, auth: o[:auth], message: o[:message]}
+        end
+         def self.condition(o,child_self=Notification)
+          cond=Event.condition(o,child_self)
+          unless (cond[:ok]) then ; return cond; end
+          cond
+         end
+         def seen o
+           finally
+           message="متشکرم"
+           message
+         end
+          def finally
+      Player.players[@options[:to]].remove_task @id
+      EventList.delete @id
+      Database::close_event(@id)
+    end
+  end
 class Player
   attr_reader :is_real,:name,:user,:age,:gender,:history
   attr_accessor :resources
@@ -251,7 +312,7 @@ class Player
     tasks=@tasks
     else
    
-      puts "info setting new "+@user
+#      puts "info setting new "+@user
       events=Database.events_later_than(time)
       @tasks.each do |id,task|
         if (task[:time] > time) then
@@ -259,10 +320,10 @@ class Player
         #  tasks[id][:id]=id
         end
       end
-      puts events
-      puts time.to_s
+ #     puts events
+ #     puts time.to_s
     end
-    puts "resources: "+ @resources.to_s  
+  #  puts "resources: "+ @resources.to_s  
     info={events: events,resources: @resources,tasks: tasks}
     info
   end

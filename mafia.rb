@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'mongo'
 require 'json'
 require 'time'
@@ -23,7 +24,8 @@ o={b:'armin',a:'hanna',thing:'10'}
 #puts Database.events_later_than(t)
 #puts Database.events_later_than(Time.now)
 
-
+o={to:'armin',message:'دالللیییی',auth:'God'}
+Game::Notification.new(o,:commit)
 def start_God
 Thread.new do
   loop do

@@ -1,9 +1,16 @@
 
-<div ng-if="$ctrl.Auth.authorized" class="center_box">
-
+<div  class="center_box">
+    
   <div  ng-repeat="task in $ctrl.Info.tasks" style=" padding:5px;
  text-align:right; direction:rtl;">
   <!--  {{task.name}} {{task.a}} {{task.thing}} -->
+    <div ng-if="task.name=='betSomethingBetter'">
     <sample-task data="task"></sample-task>
+    </div>
+         
+      <div ng-if="task.name=='notification'&&(task.seen==undefined ||task.seen==false)">
+            
+     <simple-notif data="task"></simple-notif>
+    </div>
     </div>
   </div>
