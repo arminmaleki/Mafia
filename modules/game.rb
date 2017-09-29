@@ -1,3 +1,4 @@
+# coding: utf-8
 module Game
   
   require 'time'
@@ -9,15 +10,18 @@ module Game
     
   end
   EventList={}
+  
   class Event
     def self.requirements; {}; end
     def self.optionals; {}; end
     def self.stateless; false; end
     def self.hash; "default"; end
     attr_reader :options,:id;
+    
     def self.condition(o,child_self=Event)
-       unless all_keys?(o,child_self) then return false end
-      true
+      unless all_keys?(o,child_self) then
+        return {ok: false,code: -1, message: "اطلاعات غلط. عدم موفقیت"} end
+      {ok: true,code: 1,message: "موفقیت آمیز"}
     end
     def initialize(o,commit,child_self=Event)
       @options=o;
@@ -80,15 +84,16 @@ module Game
     end
     
     def self.condition(o,child_self=SaySomething)
-      unless (Event.condition(o,child_self)) then ; return false; end
+      cond=Event.condition(o,child_self)
+      unless (cond[:ok]) then ; return cond; end
      
       unless o[:author]=o[:a] or o[:author]="God" then
         puts child_self.hash+" not authorized"
-        return false
+        return {ok: false, code: -1, message: "شما اجازه ی این کار را ندارید"}
       end
      # unless Player.players.key?(o[:a]) and Player.players.key?(o[:b]) then return false end
       
-      true
+      cond
     end
   end
   class BetSomething < SaySomething
@@ -97,7 +102,20 @@ module Game
     def self.stateless; false; end
     def self.hash; "betSomething"; end
      EventHash[self.hash]=self
-
+      def self.message_lose(q) 
+      message=" شما"+q.to_s + " تومان باختید"
+      message
+    end
+    def self.message_win(q) 
+      message=" شما"+q.to_s + " تومان بردید"
+      message
+    end
+    def self.message_reject(q)
+      message= "نپذیرفتید و "+q.to_s+"تومان جریمه شدید"
+      message
+    end
+     def self.fine; 2; end
+    def self.on_what; :money ; end
     def initialize(o,commit,child_self=BetSomething)
       
      
@@ -105,31 +123,43 @@ module Game
        Player.players[o[:b]].add_task @id,{id: @id,name: child_self.hash,stage: 0, a: o[:a], thing: o[:thing].to_i}
     end
     def self.condition(o,child_self=BetSomething)
-      unless (SaySomething.condition(o,child_self)) then ; return false; end
-      true
+      cond=Event.condition(o,child_self)
+      unless (cond[:ok]) then ; return cond; end
+      cond
     end
-    def accept(o)
+  
+    
+    def accept(o,child_self=BetSomething)
       puts "BetSomething accept"
       puts o[:user]
       puts o[:info]
       coin=Random.rand(2)
       if (coin ==1) then
-        message="you won "+@options[:thing].to_s
+        message=child_self.message_win(@options[:thing].to_s);
         money=@options[:thing].to_i
       else
-         message="you lost "+@options[:thing].to_s
+         message=child_self.message_lose(@options[:thing].to_s);
         money=-@options[:thing].to_i
       end
       puts  "BetSomething says: "+message.to_s
-      Player.players[@options[:b]].resources[:money]+=money
-      Player.players[@options[:a]].resources[:money]-=money
+      Player.players[@options[:b]].resources[child_self.on_what]+=money
+      Player.players[@options[:a]].resources[child_self.on_what]-=money
       
       finally
       
       
-      "you accepted"+message
+     message
     end
-    def reject()
+   
+    def reject(o,child_self=BetSomething)
+      puts "Rejected!"
+      Player.players[@options[:b]].resources[child_self.on_what]-=child_self.fine
+      Player.players[@options[:a]].resources[child_self.on_what]+=child_self.fine
+
+      finally
+      
+      message=child_self.message_reject(child_self.fine)
+      message
     end
     def expire(time)
     end
@@ -140,6 +170,40 @@ module Game
     end
   end
 
+  class BetSomethingBetter <BetSomething
+   def self.hash; "betSomethingBetter"; end
+   EventHash[self.hash]=self
+   def self.message_noresource_you
+     "شما این میزان پول ندارید. نا موفق "
+   end
+   def self.message_noresource(q="")
+     message="وی این میزان پول ندارد. نا موفق"
+   end
+    def initialize(o,commit,child_self=BetSomethingBetter)
+      
+     
+      super(o,commit,child_self)
+      
+    end
+    def self.condition(o,child_self=BetSomethingBetter)
+      cond=Event.condition(o,child_self)
+      unless (cond[:ok]) then ; return cond; end
+      thing=o[:thing].to_i
+      if (Player.players[o[:a]].resources[child_self.on_what] < thing) then
+        cond[:message]=child_self.message_noresource_you
+        cond[:ok]=false
+        cond[:code]=-1
+
+      end
+       if (Player.players[o[:b]].resources[child_self.on_what] < thing) then
+        cond[:message]=child_self.message_noresource(o[:b])
+        cond[:ok]=false
+        cond[:code]=-1
+
+      end
+      cond
+    end
+  end
 
 class Player
   attr_reader :is_real,:name,:user,:age,:gender,:history

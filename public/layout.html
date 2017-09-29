@@ -4,7 +4,7 @@
 <title> Mafia</title>
 <link href="./layout.css" rel="stylesheet" type="text/css">
   </head>
-  <body ng-app="mainApp">
+  <body ng-app="mainApp" ng-cloak>
     <div class="header">
      <h1>به مافیا خوش آمدید</h1>
     </div>
@@ -38,7 +38,7 @@
 
 	</form>
        </div>
-<div ng-show="Auth.authorized" class="center_box"> 
+<div ng-show="Auth.authorized" class="center_box" > 
 <div ng-click="$ctrl.show='tasks'" class="menu_item"> درخواستها </div>
 <div ng-click="$ctrl.show='actions'" class="menu_item"> کنشها </div>
 <div ng-click="$ctrl.show='events'" class="menu_item"> رویدادها </div>

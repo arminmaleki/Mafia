@@ -146,7 +146,7 @@ angular.module('mainApp').component('currentAffairs',
 				     }});
 angular.module('mainApp').component('saySomething',
 				    {templateUrl: 'saysomething.html',
-				     controller: function($scope,Info,Auth,$http){
+				     controller: function($scope,Info,Auth,$http,$timeout){
 					
 
  var controller=this;
@@ -171,11 +171,18 @@ angular.module('mainApp').component('saySomething',
 							req.data=something;
 							console.log(req);
 								$http( {method:"POST",url:"/register_event",data: req}
-         
-								     ).then(function(res){
-									 console.log("res:");
-		 console.log(res.data);
-		 
+         ).then(function(res){
+					 console.log("res:");
+					 console.log(res.data);
+									 
+	     if (res.data["message"]){
+		 controller.message=res.data["message"];
+		 controller.message_visible=true;
+		 $timeout(function(){controller.message_visible=false;
+
+				 },3000);
+
+					 }
 	//	 service.all_events=res.data.info.events;
 	//	 service.resources=res.data.info.resources;
 		 
@@ -193,7 +200,7 @@ angular.module('mainApp').component('saySomething',
 				   );
 angular.module('mainApp').component('betSomething',
 				    {templateUrl: 'betsomething.html',
-				     controller: function($scope,Info,Auth,$http){
+				     controller: function($scope,Info,Auth,$http,$timeout){
 					
 
  var controller=this;
@@ -213,7 +220,7 @@ angular.module('mainApp').component('betSomething',
 							//console.log(this.data);
                                                         var req={};
 							req.tocken=Auth.tocken;
-							req.hash="betSomething";
+							req.hash="betSomethingBetter";
 							something.a=Auth.user;
 							req.data=something;
 							console.log(req);
@@ -222,7 +229,11 @@ angular.module('mainApp').component('betSomething',
 								     ).then(function(res){
 									 console.log("res:");
 		 console.log(res.data);
-		 
+		  controller.message=res.data["message"];
+		 controller.message_visible=true;
+		 $timeout(function(){controller.message_visible=false;
+                                     console.log("message hidden");
+				 },3000);
 	//	 service.all_events=res.data.info.events;
 	//	 service.resources=res.data.info.resources;
 		 
@@ -247,7 +258,7 @@ angular.module('mainApp').component('tasks',
 				     }});
 angular.module('mainApp').component('sampleTask',
 				    {templateUrl: 'sampletask.html',bindings:{data:"="},
-				     controller: function($scope,Info,Auth,$http){
+				     controller: function($scope,Info,Auth,$http,$timeout){
 					
 					 this.Auth=Auth;
 					 this.Info=Info;
@@ -287,6 +298,13 @@ angular.module('mainApp').component('sampleTask',
 						      controller.message=res.data.message;
 						      console.log("success");
 						      console.log(res.data);
+						       controller.message=res.data.message;
+						       controller.message=res.data["message"];
+		 controller.message_visible=true;
+	//	 $timeout(function(){controller.message_visible=false;
+
+	//			 },7000);
+						      
 
 						  },function(res){
 						      console.log("unsuccessful");
@@ -300,13 +318,22 @@ angular.module('mainApp').component('sampleTask',
 					         var req={};
 					    
 					     req.method="reject";
-					    
+					     req.tocken=Auth.tocken;
+					     req.info={};
+					      req.name=controller.data.name;
+						 req.id=controller.data.id;
 					     console.log("reject");
 					     console.log(req);
 					     $http( {method:"POST",url:"/update_event",data: req}
          
 						  ).then(function(res){
+						      console.log("Reject connected server with success"); console.log(res.data);
 						      controller.message=res.data.message;
+						       controller.message=res.data["message"];
+		 controller.message_visible=true;
+	//	 $timeout(function(){controller.message_visible=false;
+
+	//			 },7000);
 
 						  },function(res){
 						      console.log("unsuccessful");

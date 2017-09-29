@@ -80,7 +80,7 @@ App.post '/update' do
   puts online
   
   data=JSON.parse(request.body.read,:symbolize_names => true)
-  puts "update Data: "+data.to_s
+ # puts "update Data: "+data.to_s
   res={code: code,online: online}
   if data.key? :tocken
     unless Game::Login.by_tocken.key? data[:tocken]
@@ -102,6 +102,7 @@ end
 
 App.post '/register_event' do
   res={}
+  res[:code]=Enum::Update[:logged_in]
   puts "register event requusted" 
   data=JSON.parse(request.body.read,:symbolize_names => true)
   puts data
@@ -129,15 +130,21 @@ App.post '/register_event' do
   o=data[:data]
   puts o
   o[:author]=user_login.user
-  unless event.condition o then
+  cond=event.condition o
+  unless cond[:ok] then
     res[:code]=Enum::Update[:invalid_event]
+    res[:event_code]=cond[:code]
+    res[:message]=cond[:message]
     return res.to_json
   end
   puts o
   e=event.new o,:commit
   puts e 
   puts "valid request"
-  "request is valid"
+  res[:event_code]=cond[:code]
+  res[:message]=cond[:message]
+                      
+  res.to_json
 end
 
 App.post '/update_event' do

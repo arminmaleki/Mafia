@@ -12,9 +12,10 @@ would you bet {{$ctrl.data.thing}} dollars with {{$ctrl.data.a}} on a coin flip?
 <span style="margin-left:10px; text-align:right; direction:rtl;color:red;font-weight:bold;">{{$ctrl.data.thing}}</span>
 <span style="margin-left:10px; text-align:right; direction:rtl;">تومن</span>
 
-<button ng-click="$ctrl.accept()"> قبوله </button>
-<button ng-click="$ctrl.reject()">... نه </button>
-<br>
-{{$ctrl.message}}
+<button ng-show="!$ctrl.message_visible" ng-click="$ctrl.accept()"> قبوله </button>
+<button ng-show="!$ctrl.message_visible" ng-click="$ctrl.reject()"> نه </button>
+<div ng-show="$ctrl.message_visible">
+ {{$ctrl.message}}
+</div>
 					     
 </div>

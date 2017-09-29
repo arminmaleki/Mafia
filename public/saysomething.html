@@ -12,7 +12,12 @@ style=" background-color:#cff;padding:5px;  direction:rtl;"
   <label> بگو </label>
   <input type="text" ng-model="something.thing" style="width:150px;">
  
-  <button type="submit" style="direction:rtl"> !ارسال </div>
-<
-</form
+  <button type="submit" style="direction:rtl"> !ارسال </button>
+</form>
+
+<div ng-show="$ctrl.message_visible">
+ {{$ctrl.message}}
+</div>
+   
+
 </div>
