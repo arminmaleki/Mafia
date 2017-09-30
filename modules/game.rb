@@ -138,11 +138,13 @@ module Game
         message=child_self.message_win(@options[:thing].to_s);
         money=@options[:thing].to_i
         winner=:b
+        
       else
          message=child_self.message_lose(@options[:thing].to_s);
          money=-@options[:thing].to_i
          winner=:a
       end
+      puts "WINNER IS : "+winner.to_s
       puts  "BetSomething says: "+message.to_s
       Player.players[@options[:b]].resources[child_self.on_what]+=money
       Player.players[@options[:a]].resources[child_self.on_what]-=money
@@ -173,6 +175,7 @@ module Game
       Player.players[@options[:b]].remove_task @id
       EventList.delete @id
       Database::close_event(@id)
+       Database.update_time(@options[:id])
     end
   end
 
@@ -186,8 +189,8 @@ module Game
      message="وی این میزان پول ندارد. نا موفق"
    end
     def initialize(o,commit,child_self=BetSomethingBetter)
-      
-     
+      o[:status]="در انتظار پاسخ"
+     o[:status]+= "<span class='user_span'> #{o[:b]} </span>"
       super(o,commit,child_self)
       
     end
@@ -224,19 +227,55 @@ module Game
       message+=b.to_s
       message+=" باختید"
         
-    end
+     end
+     def self.message_status_update(q)
+       message="<span class='user_span'> #{q.to_s} </span>"
+       message+="برد"
+     end
+     def self.message_status_reject(q)
+     end
     def accept o,child_self=BetSomethingBetter
       message=super o,child_self
-      if (message[:winner]==:a) then
+      if (message[:code]==:a) then
         notif=child_self.message_win_a @options[:thing],@options[:b]
       else
         notif=child_self.message_lose_a  @options[:thing],@options[:b]
       end
      
       Notification.new({to: @options[:a],message: notif,auth:"BetSomethingBetter#accept"},:commit)
+      
+     
+      Database.update_status(@options[:id],"پذیرفتنه شد. "+child_self.message_status_update(@options[message[:code]]))
       message[:text]
     end
-    def reject
+    def reject o,child_self=BetSomethingBetter
+      message=super o,child_self
+       Database.update_status(@options[:id],"رد شد. ")
+      message
+    end
+    def self.message_status_timeout b,fine
+      puts "message_statu_timeout"
+      message= "بیش از زمان مجاز گذشت."
+     
+     
+       message+=b.to_s
+        
+      message+="ِ"+fine.to_s
+      message+=" "
+      message+="تومان جریمه شد."
+      puts message
+      message
+    end
+    def by_god(iter,child_self=BetSomethingBetter)
+      if iter%10 == 0 then
+        puts "BetSomethingBetter by god iter: "+iter.to_s
+        if (Time.now-Time.parse(@options[:time_stamp].to_s) > 30) then
+          reject @options
+          message=child_self.message_status_timeout @options[:b].to_s,child_self.fine.to_s
+          Database.update_status(@options[:id],message)
+          
+        end
+      end
     end
   end
   class Notification < Event
@@ -391,8 +430,16 @@ module God
       end
     end
   end
-  def self.every_second
+  def self.every_second iter
     Login.prune_users
+
+      puts "God iter"
+      EventList.each do |id,event|
+        puts "god says "+event.to_s
+        if event.respond_to? :by_god then
+          event.by_god iter
+        end
+      end
     
   end
 end

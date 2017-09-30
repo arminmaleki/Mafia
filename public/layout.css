@@ -26,4 +26,4 @@ html, body
 .menu_item:hover {background-color: #fcf;}
 .center_box{background-color: #fff; position:relative;float:right; padding:20px; margin:5px; width:calc(100% - 140px);	 margin-right: 50px;}
 .message_box{background-color:white;padding:5px;margin:2px;}
-
+.user_span{color:red; font-weight:bold; margin-left:10px; margin-right:10px;}

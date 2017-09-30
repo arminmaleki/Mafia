@@ -53,5 +53,10 @@ end
 def self.close_event(id)
   $client[:events].update_one({id: id},{"$set": {closed: true}})
 end
-
+def self.update_time(id)
+   $client[:events].update_one({id: id},{"$set": {last_update: Time.now}})
+end
+def self.update_status(id,stat)
+   $client[:events].update_one({id: id},{"$set": {status: stat.to_s}})
+end
 end

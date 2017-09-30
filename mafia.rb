@@ -26,13 +26,23 @@ o={b:'armin',a:'hanna',thing:'10'}
 
 o={to:'armin',message:'دالللیییی',auth:'God'}
 Game::Notification.new(o,:commit)
+puts "GOD SAYS: "
+puts Game::EventList.size
 def start_God
-Thread.new do
-  loop do
-    Game::God.every_second
+  iter=0
+ 
+  
+    loop do
+      iter+=1
+    
+    Game::God.every_second iter
     sleep 1
-  end
+    
+    end
+
 end
-end
-start_God
 load 'modules/server.rb'
+Thread.abort_on_exception=true
+Thread.new do
+start_God
+end

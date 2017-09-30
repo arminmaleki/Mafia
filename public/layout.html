@@ -20,8 +20,8 @@
     </div>
     <div class="center_col" ng-controller="basic">
        <div id="login" >             
-      
    
+   <span ng-bind-html=" $sce.trustAsHtml(working)"></span>
       
       	<form ng-if="!Auth.authorized" name="loginForm" style="background-color: #fff; position:relative;float:right; padding:20px; magin:20px; width:calc(100% - 140px);margin-top:30px;	 margin-right: 50px;" 
       ng-submit="login(credentials)" novalidate>
@@ -39,21 +39,21 @@
 	</form>
        </div>
 <div ng-show="Auth.authorized" class="center_box" > 
-<div ng-click="$ctrl.show='tasks'" class="menu_item"> درخواستها </div>
-<div ng-click="$ctrl.show='actions'" class="menu_item"> کنشها </div>
-<div ng-click="$ctrl.show='events'" class="menu_item"> رویدادها </div>
+<div ng-click="show='tasks'" class="menu_item" ng-mouseenter="mousetoggle('tasks')" ng-mouseleave="mousetoggle('tasks')" style="background-color: {{background('tasks')}}"> درخواستها </div>
+<div ng-click="show='actions'" class="menu_item" ng-mouseenter="mousetoggle('actions')" ng-mouseleave="mousetoggle('actions')" style="background-color: {{background('actions')}}"> کنشها </div>
+<div ng-click="show='events'" class="menu_item"ng-mouseenter="mousetoggle('events')" ng-mouseleave="mousetoggle('events')" style="background-color: {{background('events')}}"> رویدادها </div>
 
 </div>
 
-<div ng-show="$ctrl.show=='events'">
+<div ng-show="show=='events'">
        
        <current-affairs></current-affairs>
 </div>
-<div ng-show="$ctrl.show=='actions'">
+<div ng-show="show=='actions'">
 <say-something></say-something>
        <bet-something></bet-something>
 </div>
-<div ng-show="$ctrl.show=='tasks'">
+<div ng-show="show=='tasks'">
 <tasks></tasks>
 </div>
        <!--<say-something>say</say-something>

@@ -82,7 +82,15 @@ app.service('Info',function($http,$timeout,Auth){
 					       service.resources=res.data.info.resources;
 		     console.log(service.resources);
 					      var new_events=res.data.info.events;
-					      new_events.forEach(function(event){service.all_events.push(event); console.log(event["id"]);});
+					      new_events.forEach(function(event){
+						  var already=false;
+						  service.all_events.forEach(function(regevent,index){
+						      if (regevent["id"]==event["id"]){
+							  service.all_events[index]=event;
+							  already=true;}
+						  });
+						  if (!already)
+						  service.all_events.push(event); console.log(event["id"]);});
 					      if (Object.keys(res.data.info.tasks).length>0 ) console.log("TASKS:");
 					      console.log(res.data.info.tasks);
 					      var new_tasks=res.data.info.tasks;
@@ -94,19 +102,36 @@ app.service('Info',function($http,$timeout,Auth){
 					     }
 		 }
                 
-				  service.online_players=res.data.online;$timeout(update,10000);},function(res){
+		 service.online_players=res.data.online;$timeout(update,10000);},function(res){
+		    
              console.log("online players update failed");
 	     $timeout(update,10000);});};
     update();
 });
-app.controller('basic',function ($rootScope,$scope,$http,Auth,Info){
-   // Info.update();
-    $scope.working="AngularJS";
+app.filter("trust", ['$sce', function($sce) {
+  return function(htmlCode){
+    return $sce.trustAsHtml(htmlCode);
+  };
+}]);
+app.controller('basic',function ($rootScope,$scope,$http,Auth,Info,$sce){
+    // Info.update();
+    $scope.renderHtml = function (htmlCode) {
+            return $sce.trustAsHtml(htmlCode);
+        };
+    var mousein={"tasks":false,"actions":false,"events":false};
+    $scope.mousetoggle=function(s){mousein[s]=!mousein[s];};
+    
+    $scope.background=function(s){
+	if (mousein[s]) return "#fcf";
+	if ($scope.show==s) return "#0aa"; else return "#cfc";
+    };
+    $scope.working="<span> AngularJS </span>";
+   
     $scope.Auth=Auth;
     $scope.credentials={};
     $scope.login=function (credentials){console.log("submitted " + credentials.username);
 					if (Auth.authenticate(credentials.username,credentials.password)) $rootScope.$broadcast('authorized');      //$scope.authorized=Auth.authorized;
-			               
+             $scope.show="actions";			               
 				       };
    // $scope.$on('authorized',function(){$scope.authorized=true; console.log("$scope.authorized",$scope.authorized);});
     
@@ -119,6 +144,7 @@ app.controller('basic2',function ($scope,$http){
 angular.module('mainApp').component('userStatus',
 				    {templateUrl: 'status.html',
 				     controller: function($scope,Auth,Info){
+					
 					 this.username="unknown";
 					 this.Auth=Auth;
 					 this.Info=Info;
@@ -131,12 +157,16 @@ angular.module('mainApp').component('onlineUsers',
 				    {templateUrl: 'onlineusers.html',
 				     controller: function($scope,Info){
 					 this.Info=Info;
+					  $scope.img_file=function(o){return "img/girl.jpg";};
 				     }});
 angular.module('mainApp').component('currentAffairs',
 				    {templateUrl: 'events.html',
-				     controller: function($scope,Info,Auth){
+				     controller: function($scope,Info,Auth,$sce){
 					 this.Info=Info;
 					 this.Auth=Auth;
+				     $scope.renderHtml = function (htmlCode) {
+            return $sce.trustAsHtml(htmlCode);
+        };
 					 $scope.$on('authorized',function(){
                                              Info.login_update();
                                              console.log("JSON INFO: "+Info.all_events);
