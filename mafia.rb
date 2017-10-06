@@ -3,6 +3,9 @@ require 'mongo'
 require 'json'
 require 'time'
 require 'sinatra'
+require 'logger'
+
+$log=Logger.new('mafia.log')
 
 load 'modules/game.rb'
 load 'modules/database.rb'
@@ -11,8 +14,6 @@ Database.populate
 Database.load_open_events
 #puts Game::Player.players;
 #puts Game::Player.players["armin"]
-puts ""
-puts ""
 o={b:'armin',a:'hanna',thing:'10'}
 #puts Game::BetSomething.condition(o)
 #Game::BetSomething.new(o,:commit)
@@ -26,8 +27,7 @@ o={b:'armin',a:'hanna',thing:'10'}
 
 o={to:'armin',message:'دالللیییی',auth:'God'}
 Game::Notification.new(o,:commit)
-puts "GOD SAYS: "
-puts Game::EventList.size
+$log.debug("#{__FILE__} , #{__LINE__} total open events: #{Game::EventList.size}");
 def start_God
   iter=0
  

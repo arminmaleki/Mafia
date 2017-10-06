@@ -31,7 +31,7 @@ module Game
       if (commit == :commit) then
         @id=SecureRandom.base64
         o[:hash]=child_self.hash
-        puts "initialize Event, child_self.hash is "+child_self.hash
+        $log.debug("#{__FILE__} , #{__LINE__} initialize Event, child_self.hash is #{child_self.hash}")
       o[:time_stamp]=DateTime.parse(Time.new.to_s)
       
       o[:last_update]=o[:time_stamp]
@@ -39,7 +39,7 @@ module Game
       o[:closed]= child_self.stateless
       o[:id]=@id
       #if (not @@stateless) then Database.put_event(o) end
-      puts "putting "+child_self.hash+" in data-base "+o.to_s
+   #   puts "putting "+child_self.hash+" in data-base "+o.to_s
       res=$client[:events].insert_one(o)
       else
         @id=o[:id]
@@ -77,7 +77,7 @@ module Game
     
    
     def initialize(o,commit,child_self=SaySomething)
-      puts "initialized SaySomething"
+      $log.debug("#{__FILE__} , #{__LINE__} initialized SaySomething")
       super(o,commit,child_self)
      
       
@@ -130,10 +130,8 @@ module Game
   
     
     def accept(o,child_self=BetSomething)
-      puts "BetSomething accept"
-      puts o[:user]
-      puts o[:info]
-      coin=Random.rand(2)
+      $log.debug("#{__FILE__} , #{__LINE__} BetSomething accept \n #{o[:user]} \n {o[:info]}")
+        coin=Random.rand(2)
       if (coin ==1) then
         message=child_self.message_win(@options[:thing].to_s);
         money=@options[:thing].to_i
@@ -144,8 +142,8 @@ module Game
          money=-@options[:thing].to_i
          winner=:a
       end
-      puts "WINNER IS : "+winner.to_s
-      puts  "BetSomething says: "+message.to_s
+      $log.debug("#{__FILE__} , #{__LINE__} WINNER IS : #{winner.to_s} \n message:#{message}")
+     # puts  "BetSomething says: "+message.to_s
       Player.players[@options[:b]].resources[child_self.on_what]+=money
       Player.players[@options[:a]].resources[child_self.on_what]-=money
       
@@ -160,7 +158,7 @@ module Game
     end
    
     def reject(o,child_self=BetSomething)
-      puts "Rejected!"
+      $log.debug("#{__FILE__} , #{__LINE__} Rejected!")
       Player.players[@options[:b]].resources[child_self.on_what]-=child_self.fine
       Player.players[@options[:a]].resources[child_self.on_what]+=child_self.fine
 
@@ -254,7 +252,7 @@ module Game
       message
     end
     def self.message_status_timeout b,fine
-      puts "message_statu_timeout"
+      
       message= "بیش از زمان مجاز گذشت."
      
      
@@ -268,7 +266,7 @@ module Game
     end
     def by_god(iter,child_self=BetSomethingBetter)
       if iter%10 == 0 then
-        puts "BetSomethingBetter by god iter: "+iter.to_s
+        $log.debug("#{__FILE__} , #{__LINE__} BetSomethingBetter by god iter: #{iter}")
         if (Time.now-Time.parse(@options[:time_stamp].to_s) > 30) then
           reject @options
           message=child_self.message_status_timeout @options[:b].to_s,child_self.fine.to_s
@@ -426,7 +424,7 @@ module God
       end
       kill_list.each do |user|
         Game::Login.by_user.delete(user)
-        puts "user "+user+"logged out"
+        $log.debug("#{__FILE__} , #{__LINE__} user #{user} logged out")
       end
     end
   end

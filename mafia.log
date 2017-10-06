@@ -1,0 +1,724 @@
+# Logfile created on 2017-10-06 13:52:10 +0330 by logger.rb/v1.2.7
+D, [2017-10-06T13:53:21.630742 #9453] DEBUG -- : mafia.rb , 30 total open events: 2
+D, [2017-10-06T13:54:22.321341 #9469] DEBUG -- : mafia.rb , 30 total open events: 3
+D, [2017-10-06T13:55:47.797997 #9469] DEBUG -- : modules/server.rb , 43 Armin  logged in
+D, [2017-10-06T13:55:47.811964 #9469] DEBUG -- : modules/server.rb , 59 LoginInfo {:info=>{:events=>[{"_id"=>BSON::ObjectId('59cd5ef99085ca10570b7f37'), "b"=>"armin", "thing"=>"10", "a"=>"hanna", "author"=>"hanna", "hash"=>"betSomething", "time_stamp"=>2017-09-28 20:43:37 UTC, "last_update"=>2017-09-28 20:43:37 UTC, "closed"=>true, "id"=>"/uKvp9c/F4HJsEwzWRT9Xg==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd63ca9085ca10570b7f38'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-28 21:04:10 UTC, "last_update"=>2017-09-28 21:04:10 UTC, "closed"=>true, "id"=>"Y3W/+3bg8w/Pv6ImFYNfXw==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd645c9085ca10570b7f39'), "b"=>"hanna", "thing"=>"20", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-28 21:06:36 UTC, "last_update"=>2017-09-28 21:06:36 UTC, "closed"=>true, "id"=>"P2ulJ/ggZYPLW+gzQbuLvQ==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd65139085ca10570b7f3a'), "b"=>"hanna", "thing"=>"12", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-28 21:09:39 UTC, "last_update"=>2017-09-28 21:09:39 UTC, "closed"=>true, "id"=>"0axdCDJbCC4FE+eQvWypNw==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd65a39085ca10570b7f3b'), "b"=>"armin", "thing"=>"کوووشی؟", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-28 21:12:03 UTC, "last_update"=>2017-09-28 21:12:03 UTC, "closed"=>true, "id"=>"LeMqpMktIOlbBqt8Sx4/AQ==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd68959085ca10570b7f3c'), "b"=>"hanna", "thing"=>"16", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-28 21:24:37 UTC, "last_update"=>2017-09-28 21:24:37 UTC, "closed"=>true, "id"=>"LPcM9FA58YZoEKhcrZPr5A==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd69269085ca10570b7f3d'), "b"=>"armin", "thing"=>"6", "a"=>"hanna", "author"=>"hanna", "hash"=>"betSomething", "time_stamp"=>2017-09-28 21:27:02 UTC, "last_update"=>2017-09-28 21:27:02 UTC, "closed"=>true, "id"=>"4cmlyZ3XZ+X9/I2tttl+MA==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd77c19085ca10570b7f3e'), "b"=>"armin", "thing"=>"21", "a"=>"hanna", "author"=>"hanna", "hash"=>"betSomething", "time_stamp"=>2017-09-28 22:29:21 UTC, "last_update"=>2017-09-28 22:29:21 UTC, "closed"=>true, "id"=>"TUd+jPzR7Mbo03Pt6U8b1A==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd80899085ca10570b7f3f'), "b"=>"hanna", "thing"=>"17", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-28 23:06:49 UTC, "last_update"=>2017-09-28 23:06:49 UTC, "closed"=>true, "id"=>"HL+i+ZGIHDNeAYsarOwfhg==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cda18b9085ca1b6aac26d1'), "b"=>"armin", "thing"=>"الان می خوام درست همینجا یک بحث خیلیخیلی طولانی رو باهات باز بکنم و ببینم واقعا نظرت در زندگی درباره ی خیلی چیزهای مهم و با اهمیت از جمله مسائلی که اینطور باید در موردشون توضیح بدم که", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 01:27:39 UTC, "last_update"=>2017-09-29 01:27:39 UTC, "closed"=>true, "id"=>"OV/HSNRpiViU1aHY11dD2w==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cda1f99085ca1b6aac26d2'), "b"=>"hanna", "thing"=>"خب بگو!!", "a"=>"armin", "author"=>"armin", "hash"=>"saySomething", "time_stamp"=>2017-09-29 01:29:29 UTC, "last_update"=>2017-09-29 01:29:29 UTC, "closed"=>true, "id"=>"uyP0kXJZQNa5VUatLoOI9w==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cda2ad9085ca1b6aac26d3'), "b"=>"hanna", "thing"=>"10", "a"=>"simin", "author"=>"simin", "hash"=>"betSomething", "time_stamp"=>2017-09-29 01:32:29 UTC, "last_update"=>2017-09-29 01:32:29 UTC, "closed"=>true, "id"=>"8kcDXGPWwzMJZrmQIUKY1g==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdc2b29085ca2b0f947b11'), "b"=>"armin", "thing"=>"20", "a"=>"hanna", "author"=>"hanna", "hash"=>"betSomething", "time_stamp"=>2017-09-29 03:49:06 UTC, "last_update"=>2017-09-29 03:49:06 UTC, "closed"=>true, "id"=>"g2BpDgtVExFdGy4cup2M/g==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdc7619085ca2fc175dcc3'), "b"=>"armin", "thing"=>"سلاااام!", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 04:09:05 UTC, "last_update"=>2017-09-29 04:09:05 UTC, "closed"=>true, "id"=>"AI5eJ4abdQc1RABjIe6P0g==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdc7909085ca2fc175dcc4'), "b"=>"armin", "thing"=>"10", "a"=>"hanna", "author"=>"hanna", "hash"=>"betSomething", "time_stamp"=>2017-09-29 04:09:52 UTC, "last_update"=>2017-09-29 04:09:52 UTC, "closed"=>true, "id"=>"fYIDqH8FYFbyKDDUtJC0yg==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdc8879085ca2fc175dcc5'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-29 04:13:59 UTC, "last_update"=>2017-09-29 04:13:59 UTC, "closed"=>true, "id"=>"EZxAi6uF6YsUaeqzIllwBw==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdc9bb9085ca2fc175dcc6'), "b"=>"armin", "thing"=>"20", "a"=>"hanna", "author"=>"hanna", "hash"=>"betSomething", "time_stamp"=>2017-09-29 04:19:07 UTC, "last_update"=>2017-09-29 04:19:07 UTC, "closed"=>true, "id"=>"wXePu3JvpRVKOXmxbm1IvQ==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdd45e9085ca320d542f2f'), "b"=>"hanna", "thing"=>"20", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-29 05:04:30 UTC, "last_update"=>2017-09-29 05:04:30 UTC, "closed"=>true, "id"=>"+A1rAMhyaGGbgIb35jI4Wg==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cead9e9085ca69bc0d29b0'), "to"=>"armin", "message"=>"شما 10تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 20:31:26 UTC, "last_update"=>2017-09-29 20:31:26 UTC, "closed"=>true, "id"=>"my/O1mmG3P9RDo6h+GCN8w=="}, {"_id"=>BSON::ObjectId('59ceb1059085ca6ac13104a6'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 20:45:57 UTC, "last_update"=>2017-09-29 20:45:57 UTC, "closed"=>true, "id"=>"YLd4Rw0WlXhYfR2rCMy3BQ=="}, {"_id"=>BSON::ObjectId('59ceb1539085ca6ac13104a8'), "to"=>"armin", "message"=>"شما 17تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 20:47:15 UTC, "last_update"=>2017-09-29 20:47:15 UTC, "closed"=>true, "id"=>"YKEmMmAofgTEnf8yN0H0XA=="}, {"_id"=>BSON::ObjectId('59ceb2f89085ca6b4bd3d87c'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 20:54:16 UTC, "last_update"=>2017-09-29 20:54:16 UTC, "closed"=>true, "id"=>"pDn91D55cOl5bVIlu4dQvQ=="}, {"_id"=>BSON::ObjectId('59ceb6359085ca6b4bd3d87e'), "b"=>"armin", "thing"=>"پیام جدید", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 21:08:05 UTC, "last_update"=>2017-09-29 21:08:05 UTC, "closed"=>true, "id"=>"awF4MRSGK/sDZ7YRntCaqA=="}, {"_id"=>BSON::ObjectId('59ceb6739085ca6b4bd3d880'), "b"=>"hanna", "thing"=>"هاهاها شرط می بندی؟", "a"=>"armin", "author"=>"armin", "hash"=>"saySomething", "time_stamp"=>2017-09-29 21:09:07 UTC, "last_update"=>2017-09-29 21:09:07 UTC, "closed"=>true, "id"=>"ohy/p9pBoscYNfYJhKkvqg=="}, {"_id"=>BSON::ObjectId('59ceb6819085ca6b4bd3d881'), "to"=>"armin", "message"=>"شما 9تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:09:21 UTC, "last_update"=>2017-09-29 21:09:21 UTC, "closed"=>true, "id"=>"Dst15/GTUBeBGIq/8Gn5mQ=="}, {"_id"=>BSON::ObjectId('59ceb7b19085ca6b4bd3d883'), "b"=>"armin", "thing"=>"باز می خوای ببازی؟!", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 21:14:25 UTC, "last_update"=>2017-09-29 21:14:25 UTC, "closed"=>true, "id"=>"KSRvDHFZwUU/fNxrp+RarA=="}, {"_id"=>BSON::ObjectId('59ceb7bf9085ca6b4bd3d884'), "to"=>"armin", "message"=>"شما 23تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:14:39 UTC, "last_update"=>2017-09-29 21:14:39 UTC, "closed"=>true, "id"=>"uW9wgocLkw0XwxuKq7l1lg=="}, {"_id"=>BSON::ObjectId('59ceb7f79085ca6b4bd3d886'), "to"=>"armin", "message"=>"شما 14تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:15:35 UTC, "last_update"=>2017-09-29 21:15:35 UTC, "closed"=>true, "id"=>"bV97UXyl5MU033O+IxJAgw=="}, {"_id"=>BSON::ObjectId('59cdda5f9085ca347ca04ec2'), "b"=>"armin", "thing"=>"10", "a"=>"hanna", "author"=>"hanna", "hash"=>"betSomething", "time_stamp"=>2017-09-29 05:30:07 UTC, "last_update"=>2017-09-29 05:30:07 UTC, "closed"=>true, "id"=>"BT8AbYxzbvFmU5Ex7LvGmg==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cddac69085ca34fbb4824d'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-29 05:31:50 UTC, "last_update"=>2017-09-29 05:31:50 UTC, "closed"=>true, "id"=>"g+qqKloFmSwQpI4oJ+Llew==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cddb3a9085ca354c8226c3'), "b"=>"armin", "thing"=>"5", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-29 05:33:46 UTC, "last_update"=>2017-09-29 05:33:46 UTC, "closed"=>true, "id"=>"PBo3wKd0Y7IPIVPu/8hRFw==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cddbb59085ca354c8226c4'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-29 05:35:49 UTC, "last_update"=>2017-09-29 05:35:49 UTC, "closed"=>true, "id"=>"kxHcXm3XVGINgckH8vfCSw==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cddc1b9085ca359c447154'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-29 05:37:31 UTC, "last_update"=>2017-09-29 05:37:31 UTC, "closed"=>true, "id"=>"6rIZi9Sfyq2BrATwACm3sQ==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cddc599085ca359c447155'), "b"=>"hanna", "thing"=>"12", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-29 05:38:33 UTC, "last_update"=>2017-09-29 05:38:33 UTC, "closed"=>true, "id"=>"NmnNBvMUNHf6gzKDkgp8eQ==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cddc899085ca359c447156'), "b"=>"armin", "thing"=>"13", "a"=>"hanna", "author"=>"hanna", "hash"=>"betSomething", "time_stamp"=>2017-09-29 05:39:21 UTC, "last_update"=>2017-09-29 05:39:21 UTC, "closed"=>true, "id"=>"QkpYvhJsQPRfEGhRAaRPaA==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cddcdd9085ca359c447157'), "b"=>"hanna", "thing"=>"11", "a"=>"armin", "author"=>"armin", "hash"=>"betSomething", "time_stamp"=>2017-09-29 05:40:45 UTC, "last_update"=>2017-09-29 05:40:45 UTC, "closed"=>true, "id"=>"taXkTbY+4+oAVPyCBK9vMw==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cde5f69085ca38585e1be9'), "b"=>"armin", "thing"=>"40", "a"=>"hanna", "author"=>"hanna", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 06:19:34 UTC, "last_update"=>2017-09-29 06:19:34 UTC, "closed"=>true, "id"=>"SgLsZbJ3kkTHkh+3sA8Ulw==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdf0c29085ca3b188fa01c'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 07:05:38 UTC, "last_update"=>2017-09-29 07:05:38 UTC, "closed"=>true, "id"=>"c+zs+qQfyGzpZge68HN4kg==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce0c7f9085ca443d58a8c9'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 09:03:59 UTC, "last_update"=>2017-09-29 09:03:59 UTC, "closed"=>true, "id"=>"uA/nLTJGI/kDFRskwkJb+g==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce0d479085ca44961cc594'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 09:07:19 UTC, "last_update"=>2017-09-29 09:07:19 UTC, "closed"=>true, "id"=>"TUFctolKS3d5ZoTfdkpFhA==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce0e1b9085ca44f29c9e92'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 09:10:51 UTC, "last_update"=>2017-09-29 09:10:51 UTC, "closed"=>true, "id"=>"ovYCEhabg3BL/bqcQMyh9Q==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce16e19085ca46d56e9f35'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 09:48:17 UTC, "last_update"=>2017-09-29 09:48:17 UTC, "closed"=>true, "id"=>"1oHywbqekT/NPlzt1y7HwA==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce17159085ca46d56e9f36'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 09:49:09 UTC, "last_update"=>2017-09-29 09:49:09 UTC, "closed"=>true, "id"=>"WMG5GeXbxIWk7je0Yj92QA==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce17559085ca4725519038'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 09:50:13 UTC, "last_update"=>2017-09-29 09:50:13 UTC, "closed"=>true, "id"=>"npIFTkfkBjQJsEkI/7oe4A==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce17ae9085ca476b3f90d9'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 09:51:42 UTC, "last_update"=>2017-09-29 09:51:42 UTC, "closed"=>true, "id"=>"IlOHCDQIto/LKIhuugT86A==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce17da9085ca476b3f90da'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 09:52:26 UTC, "last_update"=>2017-09-29 09:52:26 UTC, "closed"=>true, "id"=>"kyTV79zR0drz9eF4/c94xg==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce19999085ca47d31459e9'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 09:59:53 UTC, "last_update"=>2017-09-29 09:59:53 UTC, "closed"=>true, "id"=>"O5s79XYe7sohILLaAKriyw==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce19cc9085ca47d31459ea'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 10:00:44 UTC, "last_update"=>2017-09-29 10:00:44 UTC, "closed"=>true, "id"=>"r6C+5/ezdZ7JwBDvcs1lqQ==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce1a4f9085ca4828a483f2'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 10:02:55 UTC, "last_update"=>2017-09-29 10:02:55 UTC, "closed"=>true, "id"=>"lPQ6YNEPw7lAetOT/3gx7A==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce1a6c9085ca4828a483f3'), "b"=>"hanna", "thing"=>"11", "a"=>"hanna", "author"=>"hanna", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 10:03:24 UTC, "last_update"=>2017-09-29 10:03:24 UTC, "closed"=>true, "id"=>"s1MWaTw5rQjPFsNUbeAKcg==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce1a829085ca4828a483f4'), "b"=>"hanna", "thing"=>"13", "a"=>"armin", "author"=>"armin", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 10:03:46 UTC, "last_update"=>2017-09-29 10:03:46 UTC, "closed"=>true, "id"=>"BLmQDql+WA0Dlg3CxIxDbA==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd5e689085ca10570b7f35'), "b"=>"armin", "thing"=>"تعطیلیام حیف شد...", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-28 20:41:12 UTC, "last_update"=>2017-09-28 20:41:12 UTC, "closed"=>true, "id"=>"LxTSBlPpcmrxJscd9kVvBA==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd5ee29085ca10570b7f36'), "b"=>"hanna", "thing"=>"ددری شدی ها!", "a"=>"armin", "author"=>"armin", "hash"=>"saySomething", "time_stamp"=>2017-09-28 20:43:14 UTC, "last_update"=>2017-09-28 20:43:14 UTC, "closed"=>true, "id"=>"vWcwVKPrd5H6YHWirjAMRw==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cd8a159085ca1a94422bfb'), "b"=>"armin", "thing"=>"دوووستت دارم!", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-28 23:47:33 UTC, "last_update"=>2017-09-28 23:47:33 UTC, "closed"=>true, "id"=>"d11+6pI/06Q4fwzxopI7Sg==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdbe849085ca2b0f947b0b'), "b"=>"armin", "thing"=>"دوباره باز...", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 03:31:16 UTC, "last_update"=>2017-09-29 03:31:16 UTC, "closed"=>true, "id"=>"v+tnC/7UwN3qqO/6MzBndA==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdbe929085ca2b0f947b0c'), "b"=>"armin", "thing"=>"دوباره باز...", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 03:31:30 UTC, "last_update"=>2017-09-29 03:31:30 UTC, "closed"=>true, "id"=>"USVqPAUER1rnbJEeT/RUhQ==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdbef09085ca2b0f947b0d'), "b"=>"simin", "thing"=>"دوباره باز فایده نداره", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 03:33:04 UTC, "last_update"=>2017-09-29 03:33:04 UTC, "closed"=>true, "id"=>"ViHs61AuPAw1hj54XFSNjg==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdbf3c9085ca2b0f947b0e'), "b"=>"armin", "thing"=>"روزی روزگاری...", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 03:34:20 UTC, "last_update"=>2017-09-29 03:34:20 UTC, "closed"=>true, "id"=>"TWodT2sGwD6L7wLCTYPBrQ==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdbfa99085ca2b0f947b0f'), "b"=>"armin", "thing"=>"پیامی دیگر", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 03:36:09 UTC, "last_update"=>2017-09-29 03:36:09 UTC, "closed"=>true, "id"=>"z5h1ha3+suuLYrsdwZcU0Q==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdbfdd9085ca2b0f947b10'), "b"=>"armin", "thing"=>"باز هم پیام...", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 03:37:01 UTC, "last_update"=>2017-09-29 03:37:01 UTC, "closed"=>true, "id"=>"8aRSzPvpB8d78QBVbp9t/w==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cdc2f69085ca2b0f947b12'), "b"=>"hanna", "thing"=>"ما بردیم و ما بردیم", "a"=>"armin", "author"=>"armin", "hash"=>"saySomething", "time_stamp"=>2017-09-29 03:50:14 UTC, "last_update"=>2017-09-29 03:50:14 UTC, "closed"=>true, "id"=>"ljx1ovaFu4ChN/4IHHEyiA==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59cddd479085ca359c447158'), "b"=>"simin", "thing"=>"سلام سلام!", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 05:42:31 UTC, "last_update"=>2017-09-29 05:42:31 UTC, "closed"=>true, "id"=>"VgeQwwxdI4A6Wpo+CqYEFQ==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce1a8c9085ca4828a483f5'), "to"=>"armin", "message"=>"شما 13تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 10:03:56 UTC, "last_update"=>2017-09-29 10:03:56 UTC, "closed"=>true, "id"=>"x4+PmoArSPwQW0yOLozDtQ==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce1ac89085ca4828a483f6'), "to"=>"hanna", "message"=>"شما 11تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 10:04:56 UTC, "last_update"=>2017-09-29 10:04:56 UTC, "closed"=>true, "id"=>"DBaHdSS6NOLO11tWyKD1lA==", "status"=>"تعریف نشده است"}, {"_id"=>BSON::ObjectId('59ce9b969085ca63a5c30ae4'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 19:14:30 UTC, "last_update"=>2017-09-29 19:14:30 UTC, "closed"=>true, "id"=>"0ttX9UGW5GE+2z8K38hXhQ=="}, {"_id"=>BSON::ObjectId('59ce9bdf9085ca63a5c30ae5'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 19:15:43 UTC, "last_update"=>2017-09-29 20:31:26 UTC, "closed"=>true, "id"=>"+BZ71xFi35Y/xuOmoQxCeQ=="}, {"_id"=>BSON::ObjectId('59cea9489085ca63a5c30ae6'), "b"=>"armin", "thing"=>"برا وقت گذرونی...", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-29 20:12:56 UTC, "last_update"=>2017-09-29 20:12:56 UTC, "closed"=>true, "id"=>"OLBRpcXa55RJ3EOrHerh8Q=="}, {"_id"=>BSON::ObjectId('59cead779085ca69bc0d29af'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 20:30:47 UTC, "last_update"=>2017-09-29 20:30:47 UTC, "closed"=>true, "id"=>"90BSGv05rz1rSq5PhBphZw=="}, {"_id"=>BSON::ObjectId('59ceb13b9085ca6ac13104a7'), "b"=>"hanna", "thing"=>"17", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> hanna </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 20:46:51 UTC, "last_update"=>2017-09-29 20:47:15 UTC, "closed"=>true, "id"=>"NpdI4ee269kdhCTKpPLBkg=="}, {"_id"=>BSON::ObjectId('59ceb3169085ca6b4bd3d87d'), "b"=>"hanna", "thing"=>"11", "a"=>"armin", "author"=>"armin", "status"=>"رد شد. ", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 20:54:46 UTC, "last_update"=>2017-09-29 20:55:07 UTC, "closed"=>true, "id"=>"mQ11s9HxNZcdQCh/NQ4G3w=="}, {"_id"=>BSON::ObjectId('59ceb6599085ca6b4bd3d87f'), "b"=>"hanna", "thing"=>"9", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> hanna </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:08:41 UTC, "last_update"=>2017-09-29 21:09:21 UTC, "closed"=>true, "id"=>"9mBAnv/4sSgYW4e8oupA1g=="}, {"_id"=>BSON::ObjectId('59ceb79e9085ca6b4bd3d882'), "b"=>"hanna", "thing"=>"23", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> hanna </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:14:06 UTC, "last_update"=>2017-09-29 21:14:39 UTC, "closed"=>true, "id"=>"/23bVNEIeTF+MOTaSybEKg=="}, {"_id"=>BSON::ObjectId('59ceb7ea9085ca6b4bd3d885'), "b"=>"hanna", "thing"=>"14", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> hanna </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:15:22 UTC, "last_update"=>2017-09-29 21:15:35 UTC, "closed"=>true, "id"=>"wX2KIJiVF6sKTkNcg3apAA=="}, {"_id"=>BSON::ObjectId('59ceb8099085ca6b4bd3d887'), "b"=>"hanna", "thing"=>"4", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> hanna </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:15:53 UTC, "last_update"=>2017-09-29 21:15:58 UTC, "closed"=>true, "id"=>"82w+hVSEq2tj0Z8eDMgFyA=="}, {"_id"=>BSON::ObjectId('59ceb80e9085ca6b4bd3d888'), "to"=>"armin", "message"=>"شما 4تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:15:58 UTC, "last_update"=>2017-09-29 21:15:58 UTC, "closed"=>true, "id"=>"uEH+lPb2upTMFdwpi8Q/gg=="}, {"_id"=>BSON::ObjectId('59ceb82b9085ca6b4bd3d889'), "b"=>"armin", "thing"=>"1", "a"=>"hanna", "author"=>"hanna", "status"=>"پذیرفتنه شد. <span class='user_span'> armin </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:16:27 UTC, "last_update"=>2017-09-29 21:16:38 UTC, "closed"=>true, "id"=>"MM1J74IdJ3tYqgmbOqy1pg=="}, {"_id"=>BSON::ObjectId('59ceb8369085ca6b4bd3d88a'), "to"=>"hanna", "message"=>"شما 1تومان بهarmin باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:16:38 UTC, "last_update"=>2017-09-29 21:16:38 UTC, "closed"=>true, "id"=>"kMtOlpsWyScCJMjL99ZYVQ=="}, {"_id"=>BSON::ObjectId('59ceb8479085ca6b4bd3d88b'), "b"=>"armin", "thing"=>"1", "a"=>"hanna", "author"=>"hanna", "status"=>"پذیرفتنه شد. <span class='user_span'> armin </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:16:55 UTC, "last_update"=>2017-09-29 21:17:06 UTC, "closed"=>true, "id"=>"VGE0sION3eyh8cRd009+Ug=="}, {"_id"=>BSON::ObjectId('59ceb8529085ca6b4bd3d88c'), "to"=>"hanna", "message"=>"شما 1تومان بهarmin باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:17:06 UTC, "last_update"=>2017-09-29 21:17:06 UTC, "closed"=>true, "id"=>"1PIhwXCRbhjUOXhcqFDd2A=="}, {"_id"=>BSON::ObjectId('59ceb8669085ca6b4bd3d88d'), "b"=>"armin", "thing"=>"1", "a"=>"hanna", "author"=>"hanna", "status"=>"پذیرفتنه شد. <span class='user_span'> armin </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:17:26 UTC, "last_update"=>2017-09-29 21:17:36 UTC, "closed"=>true, "id"=>"vU1hwb1o5mqtiwq+cEVk8g=="}, {"_id"=>BSON::ObjectId('59ceb8709085ca6b4bd3d88e'), "to"=>"hanna", "message"=>"شما 1تومان بهarmin باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:17:36 UTC, "last_update"=>2017-09-29 21:17:36 UTC, "closed"=>true, "id"=>"yr6BqtnSjI3886lRhaNYzQ=="}, {"_id"=>BSON::ObjectId('59ceb8759085ca6b4bd3d88f'), "b"=>"armin", "thing"=>"1", "a"=>"hanna", "author"=>"hanna", "status"=>"پذیرفتنه شد. <span class='user_span'> armin </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:17:41 UTC, "last_update"=>2017-09-29 21:17:47 UTC, "closed"=>true, "id"=>"5iibzIO+zzVRpDHQEAL2Lg=="}, {"_id"=>BSON::ObjectId('59ceb87b9085ca6b4bd3d890'), "to"=>"hanna", "message"=>"شما 1تومان بهarmin باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:17:47 UTC, "last_update"=>2017-09-29 21:17:47 UTC, "closed"=>true, "id"=>"Y98hD8/F/gYzGDLXERZSnA=="}, {"_id"=>BSON::ObjectId('59ceb8879085ca6b4bd3d891'), "b"=>"armin", "thing"=>"1", "a"=>"hanna", "author"=>"hanna", "status"=>"پذیرفتنه شد. <span class='user_span'> armin </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:17:59 UTC, "last_update"=>2017-09-29 21:18:06 UTC, "closed"=>true, "id"=>"ESGOei+NLYvtvxVAxYm+ig=="}, {"_id"=>BSON::ObjectId('59ceb88e9085ca6b4bd3d892'), "to"=>"hanna", "message"=>"شما 1تومان بهarmin باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:18:06 UTC, "last_update"=>2017-09-29 21:18:06 UTC, "closed"=>true, "id"=>"sAqVRb2WDBvCxZOPMYfhPg=="}, {"_id"=>BSON::ObjectId('59ceb98d9085ca6d419234aa'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 21:22:21 UTC, "last_update"=>2017-09-29 21:22:21 UTC, "closed"=>true, "id"=>"lA67ENdLmJuzibdFOdZ6qQ=="}, {"_id"=>BSON::ObjectId('59ceb9b29085ca6d419234ab'), "b"=>"hanna", "thing"=>"5", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> hanna </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:22:58 UTC, "last_update"=>2017-09-29 21:23:09 UTC, "closed"=>true, "id"=>"pMe1FsMirbF9LrfdPiS5fw=="}, {"_id"=>BSON::ObjectId('59ceb9bd9085ca6d419234ac'), "to"=>"armin", "message"=>"شما 5تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:23:09 UTC, "last_update"=>2017-09-29 21:23:09 UTC, "closed"=>true, "id"=>"QauLc6jJQ/75JoCtsLsc7A=="}, {"_id"=>BSON::ObjectId('59ceb9f29085ca6d419234ad'), "b"=>"hanna", "thing"=>"5", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> armin </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:24:02 UTC, "last_update"=>2017-09-29 21:24:09 UTC, "closed"=>true, "id"=>"aAAMQiptWCSekUwGYOCA5A=="}, {"_id"=>BSON::ObjectId('59ceb9f99085ca6d419234ae'), "to"=>"armin", "message"=>"شما 5تومان ازhanna بردید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:24:09 UTC, "last_update"=>2017-09-29 21:24:09 UTC, "closed"=>true, "id"=>"yDrINa7l3C5PHzUwkT3JSg=="}, {"_id"=>BSON::ObjectId('59ceba079085ca6d419234af'), "b"=>"hanna", "thing"=>"5", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> armin </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:24:23 UTC, "last_update"=>2017-09-29 21:24:35 UTC, "closed"=>true, "id"=>"0Bwmqhy7b6lYnUFkCNJE/g=="}, {"_id"=>BSON::ObjectId('59ceba139085ca6d419234b0'), "to"=>"armin", "message"=>"شما 5تومان ازhanna بردید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-29 21:24:35 UTC, "last_update"=>2017-09-29 21:24:35 UTC, "closed"=>true, "id"=>"OLimn7pJAw+kwqYg65nWPw=="}, {"_id"=>BSON::ObjectId('59cebd039085ca6d419234b1'), "b"=>"hanna", "thing"=>"5", "a"=>"armin", "author"=>"armin", "status"=>"رد شد. ", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 21:37:07 UTC, "last_update"=>2017-09-29 22:29:47 UTC, "closed"=>true, "id"=>"0otOoo1zTJxlw5mSkRc3gA=="}, {"_id"=>BSON::ObjectId('59cebe689085ca6ebdb6c7c7'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 21:43:04 UTC, "last_update"=>2017-09-29 21:43:04 UTC, "closed"=>true, "id"=>"wgCWxuAn3ZpxLgLG8TPISw=="}, {"_id"=>BSON::ObjectId('59cebe9b9085ca6ee2542208'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 21:43:55 UTC, "last_update"=>2017-09-29 21:43:55 UTC, "closed"=>true, "id"=>"vOosT0ekRTN9LFahC5c1vQ=="}, {"_id"=>BSON::ObjectId('59cebeeb9085ca6f2b1a2f60'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 21:45:15 UTC, "last_update"=>2017-09-29 21:45:15 UTC, "closed"=>true, "id"=>"z+tpU1c/vJWd6hWNT3HJuQ=="}, {"_id"=>BSON::ObjectId('59cec4519085ca70235545c7'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:08:17 UTC, "last_update"=>2017-09-29 22:08:17 UTC, "closed"=>true, "id"=>"6TQly3FyayOGS6IDIKCiBA=="}, {"_id"=>BSON::ObjectId('59cec4d39085ca70506979ce'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:10:27 UTC, "last_update"=>2017-09-29 22:10:27 UTC, "closed"=>true, "id"=>"DOmYnGNcS8wn4haH5pn90w=="}, {"_id"=>BSON::ObjectId('59cec51b9085ca708fd52223'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:11:39 UTC, "last_update"=>2017-09-29 22:11:39 UTC, "closed"=>true, "id"=>"lXfBkDCunuqbK7W+IlZZyA=="}, {"_id"=>BSON::ObjectId('59cec5829085ca70ab9a2b1b'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:13:22 UTC, "last_update"=>2017-09-29 22:13:22 UTC, "closed"=>true, "id"=>"lgytlXitoId8ZZN+FA5kUg=="}, {"_id"=>BSON::ObjectId('59cec5989085ca70b815316b'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:13:44 UTC, "last_update"=>2017-09-29 22:13:44 UTC, "closed"=>true, "id"=>"NUsAzrfaoF9fDfhWOxCFhg=="}, {"_id"=>BSON::ObjectId('59cec5ca9085ca70c775468a'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:14:34 UTC, "last_update"=>2017-09-29 22:14:34 UTC, "closed"=>true, "id"=>"RrUI6sED4h/7jZQ92202jQ=="}, {"_id"=>BSON::ObjectId('59cec6679085ca70e3ac71e2'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:17:11 UTC, "last_update"=>2017-09-29 22:17:11 UTC, "closed"=>true, "id"=>"8U/SYDQoEaqHK6ZcK4bPxw=="}, {"_id"=>BSON::ObjectId('59cec6749085ca70f40cee47'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:17:24 UTC, "last_update"=>2017-09-29 22:17:24 UTC, "closed"=>true, "id"=>"t+L10KJUYflMzyVDj8afuw=="}, {"_id"=>BSON::ObjectId('59cec73b9085ca711db9be31'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:20:43 UTC, "last_update"=>2017-09-29 22:20:43 UTC, "closed"=>true, "id"=>"S++ABxMF1JOEWid7aXw1dA=="}, {"_id"=>BSON::ObjectId('59cec7959085ca714c9551de'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:22:13 UTC, "last_update"=>2017-09-29 22:22:13 UTC, "closed"=>true, "id"=>"/HwgjTC3Nlal+SYJnE3m6g=="}, {"_id"=>BSON::ObjectId('59cec7bd9085ca717f849f19'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:22:53 UTC, "last_update"=>2017-09-29 22:22:53 UTC, "closed"=>true, "id"=>"V0Oe5FPWEso3fdzaxc1fPQ=="}, {"_id"=>BSON::ObjectId('59cec9599085ca71f8249fe2'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:29:45 UTC, "last_update"=>2017-09-29 22:29:45 UTC, "closed"=>true, "id"=>"7tV+nD+qZr69l/NU9LwVLA=="}, {"_id"=>BSON::ObjectId('59cecbaf9085ca728feece58'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:39:43 UTC, "last_update"=>2017-09-29 22:39:43 UTC, "closed"=>true, "id"=>"mLS7BQnW9V3BLbyU3v8QyA=="}, {"_id"=>BSON::ObjectId('59cecbed9085ca728feece59'), "b"=>"hanna", "thing"=>"17", "a"=>"armin", "author"=>"armin", "status"=>"رد شد. ", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 22:40:45 UTC, "last_update"=>2017-09-29 22:44:25 UTC, "closed"=>true, "id"=>"ekePEDJE/R1zNBvD3aExpQ=="}, {"_id"=>BSON::ObjectId('59ceccc09085ca7300a87b25'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:44:16 UTC, "last_update"=>2017-09-29 22:44:16 UTC, "closed"=>true, "id"=>"Dhr60qQReau+UdW52VRzWA=="}, {"_id"=>BSON::ObjectId('59cecd289085ca7331ba9d2e'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:46:00 UTC, "last_update"=>2017-09-29 22:46:00 UTC, "closed"=>true, "id"=>"bJKajKVYQ2wFwflEkm632Q=="}, {"_id"=>BSON::ObjectId('59cecd4f9085ca735abfe461'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:46:39 UTC, "last_update"=>2017-09-29 22:46:39 UTC, "closed"=>true, "id"=>"644L5rwFxTYuSVBFmOdWMA=="}, {"_id"=>BSON::ObjectId('59cecdb49085ca735abfe462'), "b"=>"hanna", "thing"=>"19", "a"=>"armin", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hanna  2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 22:48:20 UTC, "last_update"=>2017-09-29 23:03:25 UTC, "closed"=>true, "id"=>"NcW8yfGKkeJN79I0zHNFIg=="}, {"_id"=>BSON::ObjectId('59cece379085ca73afb00937'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:50:31 UTC, "last_update"=>2017-09-29 22:50:31 UTC, "closed"=>true, "id"=>"dr2hapHOxeOj9njuuuprcA=="}, {"_id"=>BSON::ObjectId('59cece8c9085ca73e2929ca1'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:51:56 UTC, "last_update"=>2017-09-29 22:51:56 UTC, "closed"=>true, "id"=>"iOInXRFOh6BPcq52F2nC8A=="}, {"_id"=>BSON::ObjectId('59cecef89085ca7415357aab'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:53:44 UTC, "last_update"=>2017-09-29 22:53:44 UTC, "closed"=>true, "id"=>"UYkIj7TWKnHu5r1lc8smEQ=="}, {"_id"=>BSON::ObjectId('59cecf469085ca7455381d80'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:55:02 UTC, "last_update"=>2017-09-29 22:55:02 UTC, "closed"=>true, "id"=>"pkvKxQ7T/+c8e78e6gJ+jw=="}, {"_id"=>BSON::ObjectId('59cecf869085ca747f7af766'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:56:06 UTC, "last_update"=>2017-09-29 22:56:06 UTC, "closed"=>true, "id"=>"FLST7tX/e+dmcEytwW9kaw=="}, {"_id"=>BSON::ObjectId('59cecfc39085ca74a908a193'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 22:57:07 UTC, "last_update"=>2017-09-29 22:57:07 UTC, "closed"=>true, "id"=>"uvW5VRZjKUlIb0NYF6NbuA=="}, {"_id"=>BSON::ObjectId('59ced0939085ca74dda55cd3'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 23:00:35 UTC, "last_update"=>2017-09-29 23:00:35 UTC, "closed"=>true, "id"=>"XkzudzXbi/01TStGDwbvuA=="}, {"_id"=>BSON::ObjectId('59ced0b09085ca75029e7239'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 23:01:04 UTC, "last_update"=>2017-09-29 23:01:04 UTC, "closed"=>true, "id"=>"l69BjuByEUNkz0trYHIIcg=="}, {"_id"=>BSON::ObjectId('59ced1089085ca7532fe7324'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 23:02:32 UTC, "last_update"=>2017-09-29 23:02:32 UTC, "closed"=>true, "id"=>"qBC8/Nyw3iCX4hpsyWXP3Q=="}, {"_id"=>BSON::ObjectId('59ced1349085ca7557029268'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 23:03:16 UTC, "last_update"=>2017-09-29 23:03:16 UTC, "closed"=>true, "id"=>"FjcvsT/LbBXa0RPMf+11aw=="}, {"_id"=>BSON::ObjectId('59ced1509085ca757d7ffcfa'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 23:03:44 UTC, "last_update"=>2017-09-29 23:03:44 UTC, "closed"=>true, "id"=>"LDwo5mVhZ/HHTcTGuyxP1w=="}, {"_id"=>BSON::ObjectId('59ced1959085ca757d7ffcfb'), "b"=>"hanna", "thing"=>"9", "a"=>"armin", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hanna  2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 23:04:53 UTC, "last_update"=>2017-09-29 23:39:39 UTC, "closed"=>true, "id"=>"VMD9NCMJ1iYZXZlHb635gA=="}, {"_id"=>BSON::ObjectId('59ced9b29085ca7838f5c0c2'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 23:39:30 UTC, "last_update"=>2017-09-29 23:39:30 UTC, "closed"=>true, "id"=>"PiZiLBIWihInCth6f4Drpg=="}, {"_id"=>BSON::ObjectId('59ceda6a9085ca7838f5c0c3'), "b"=>"hanna", "thing"=>"20", "a"=>"armin", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hanna  2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 23:42:34 UTC, "last_update"=>2017-09-29 23:51:06 UTC, "closed"=>true, "id"=>"H1C/rhzV3HDeXCo8O8yjmQ=="}, {"_id"=>BSON::ObjectId('59cedc439085ca791ecfd172'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 23:50:27 UTC, "last_update"=>2017-09-29 23:50:27 UTC, "closed"=>true, "id"=>"aKda8+xfulkQubGaYu9ZRw=="}, {"_id"=>BSON::ObjectId('59cedc619085ca792e1fcbef'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 23:50:57 UTC, "last_update"=>2017-09-29 23:50:57 UTC, "closed"=>true, "id"=>"RGOk/wRKqx17KbIEWUPCVQ=="}, {"_id"=>BSON::ObjectId('59cedc859085ca792e1fcbf0'), "b"=>"hanna", "thing"=>"5", "a"=>"armin", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hanna  2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 23:51:33 UTC, "last_update"=>2017-09-29 23:54:52 UTC, "closed"=>true, "id"=>"qI2CtgrnB8ZA6rjQBSBKTQ=="}, {"_id"=>BSON::ObjectId('59cedd439085ca79b509f8d6'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 23:54:43 UTC, "last_update"=>2017-09-29 23:54:43 UTC, "closed"=>true, "id"=>"B+MKpduwwUn/S2TFjE5GZg=="}, {"_id"=>BSON::ObjectId('59cedd679085ca79b509f8d7'), "b"=>"hanna", "thing"=>"7", "a"=>"armin", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hanna  2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 23:55:19 UTC, "last_update"=>2017-09-29 23:55:52 UTC, "closed"=>true, "id"=>"/kQcgC/X4CZ2UXrbUQeL4g=="}, {"_id"=>BSON::ObjectId('59ceddda9085ca7a0f4f078d'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-29 23:57:14 UTC, "last_update"=>2017-09-29 23:57:14 UTC, "closed"=>true, "id"=>"TM4r7MqM9/5e4ZVX1RhZfg=="}, {"_id"=>BSON::ObjectId('59cedded9085ca7a0f4f078e'), "b"=>"hanna", "thing"=>"5", "a"=>"armin", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hannaِ2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-29 23:57:33 UTC, "last_update"=>2017-09-29 23:58:04 UTC, "closed"=>true, "id"=>"fe80I64YCZsfpTuBlLeGHg=="}, {"_id"=>BSON::ObjectId('59cef06a9085ca7a0f4f078f'), "b"=>"hanna", "thing"=>"40", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> hanna </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-30 01:16:26 UTC, "last_update"=>2017-09-30 01:16:56 UTC, "closed"=>true, "id"=>"oDsMm553uNh6Gqwkkd5Zig=="}, {"_id"=>BSON::ObjectId('59cef0889085ca7a0f4f0790'), "to"=>"armin", "message"=>"شما 40تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-30 01:16:56 UTC, "last_update"=>2017-09-30 01:16:56 UTC, "closed"=>true, "id"=>"tvI6ShG6808XQ3MVIXcDIg=="}, {"_id"=>BSON::ObjectId('59cfbae29085ca27baa39bf6'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-09-30 15:40:18 UTC, "last_update"=>2017-09-30 15:40:18 UTC, "closed"=>true, "id"=>"Lnc7bNHqhP5K6rCwuYcS1w=="}, {"_id"=>BSON::ObjectId('59cfbb709085ca27baa39bf7'), "b"=>"armin", "thing"=>"30", "a"=>"hanna", "author"=>"hanna", "status"=>"پذیرفتنه شد. <span class='user_span'> armin </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-30 15:42:40 UTC, "last_update"=>2017-09-30 15:43:04 UTC, "closed"=>true, "id"=>"NvY91KfwnmwjjMwOsSQ9ww=="}, {"_id"=>BSON::ObjectId('59cfbb889085ca27baa39bf8'), "to"=>"hanna", "message"=>"شما 30تومان بهarmin باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-30 15:43:04 UTC, "last_update"=>2017-09-30 15:43:04 UTC, "closed"=>true, "id"=>"g/GovL41KwlMgL9WcQiBvg=="}, {"_id"=>BSON::ObjectId('59cfbbb49085ca27baa39bf9'), "b"=>"hanna", "thing"=>"فوتینا!", "a"=>"armin", "author"=>"armin", "hash"=>"saySomething", "time_stamp"=>2017-09-30 15:43:48 UTC, "last_update"=>2017-09-30 15:43:48 UTC, "closed"=>true, "id"=>"ZURnBwYtvTJBAcGo4H6Fgw=="}, {"_id"=>BSON::ObjectId('59cfbbf99085ca27baa39bfa'), "b"=>"hanna", "thing"=>"20", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> hanna </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-30 15:44:57 UTC, "last_update"=>2017-09-30 15:45:28 UTC, "closed"=>true, "id"=>"0jz4zNwC83MEc31esldbZA=="}, {"_id"=>BSON::ObjectId('59cfbc189085ca27baa39bfb'), "to"=>"armin", "message"=>"شما 20تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-09-30 15:45:28 UTC, "last_update"=>2017-09-30 15:45:28 UTC, "closed"=>true, "id"=>"56J4X19W/tth5fra2V2Llw=="}, {"_id"=>BSON::ObjectId('59cfbc369085ca27baa39bfc'), "b"=>"armin", "thing"=>"10", "a"=>"hanna", "author"=>"hanna", "status"=>"رد شد. ", "hash"=>"betSomethingBetter", "time_stamp"=>2017-09-30 15:45:58 UTC, "last_update"=>2017-09-30 15:46:14 UTC, "closed"=>true, "id"=>"xEEBJCj8ZfvwYxFApTxyXQ=="}, {"_id"=>BSON::ObjectId('59cfbc599085ca27baa39bfd'), "b"=>"armin", "thing"=>"فوتینا بک!", "a"=>"hanna", "author"=>"hanna", "hash"=>"saySomething", "time_stamp"=>2017-09-30 15:46:33 UTC, "last_update"=>2017-09-30 15:46:33 UTC, "closed"=>true, "id"=>"WIwKBuZ6tXoppNohNZTA3g=="}, {"_id"=>BSON::ObjectId('59d354b49085ca558a7f2e9d'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-03 09:13:24 UTC, "last_update"=>2017-10-03 09:13:24 UTC, "closed"=>true, "id"=>"hL6HwPMAPfaDzb4tPQl8Gw=="}, {"_id"=>BSON::ObjectId('59d355ac9085ca558a7f2e9e'), "b"=>"armin", "thing"=>"20", "a"=>"hanna", "author"=>"hanna", "status"=>"بیش از زمان مجاز گذشت.arminِ2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-03 09:17:32 UTC, "last_update"=>2017-10-03 09:18:03 UTC, "closed"=>true, "id"=>"TnjXXap9yMAk+JTkcHuZ/Q=="}, {"_id"=>BSON::ObjectId('59d356809085ca558a7f2e9f'), "b"=>"armin", "thing"=>"10", "a"=>"armin", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.arminِ2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-03 09:21:04 UTC, "last_update"=>2017-10-03 09:21:43 UTC, "closed"=>true, "id"=>"ZN2zNqyXeHmo+hhLBWBc2Q=="}, {"_id"=>BSON::ObjectId('59d3568b9085ca558a7f2ea0'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hannaِ2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-03 09:21:15 UTC, "last_update"=>2017-10-03 09:21:53 UTC, "closed"=>true, "id"=>"W0/8AgzDysjX9oSf6eIymQ=="}, {"_id"=>BSON::ObjectId('59d357079085ca558a7f2ea1'), "b"=>"hanna", "thing"=>"20", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> armin </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-03 09:23:19 UTC, "last_update"=>2017-10-03 09:23:26 UTC, "closed"=>true, "id"=>"IM6eWRqUvP4mhN7Qz5cLyQ=="}, {"_id"=>BSON::ObjectId('59d3570e9085ca558a7f2ea2'), "to"=>"armin", "message"=>"شما 20تومان ازhanna بردید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-10-03 09:23:26 UTC, "last_update"=>2017-10-03 09:23:26 UTC, "closed"=>true, "id"=>"aQOyCH+6sQk0MTNvJUDA7w=="}, {"_id"=>BSON::ObjectId('59d7559a9085ca23d405bb3d'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-06 10:06:18 UTC, "last_update"=>2017-10-06 10:06:18 UTC, "closed"=>true, "id"=>"eiEm4q3bwIm4ljYp5Nm+xQ=="}, {"_id"=>BSON::ObjectId('59d755bf9085ca23d405bb3e'), "b"=>"hanna", "thing"=>"25", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> armin </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-06 10:06:55 UTC, "last_update"=>2017-10-06 10:07:14 UTC, "closed"=>true, "id"=>"SD5mFlLJ0WkSGNeX/Y8N7Q=="}, {"_id"=>BSON::ObjectId('59d755d29085ca23d405bb3f'), "to"=>"armin", "message"=>"شما 25تومان ازhanna بردید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-10-06 10:07:14 UTC, "last_update"=>2017-10-06 10:07:14 UTC, "closed"=>true, "id"=>"yjDxGt0nK4mVGrKbUg0RRg=="}, {"_id"=>BSON::ObjectId('59d759529085ca24cd55c8dc'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-06 10:22:10 UTC, "last_update"=>2017-10-06 10:22:10 UTC, "closed"=>false, "id"=>"QmurmY4xrJe1C9SQ0h3+dA=="}, {"_id"=>BSON::ObjectId('59d759999085ca24ed553952'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-06 10:23:21 UTC, "last_update"=>2017-10-06 10:23:21 UTC, "closed"=>false, "id"=>"ZLHam4QGnby/etPQXcdiew=="}, {"_id"=>BSON::ObjectId('59d759d69085ca24fddc199a'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-06 10:24:22 UTC, "last_update"=>2017-10-06 10:24:22 UTC, "closed"=>false, "id"=>"AkjzahZGl3U3cagizt/Jag=="}], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{"QmurmY4xrJe1C9SQ0h3+dA=="=>{:id=>"QmurmY4xrJe1C9SQ0h3+dA==", :name=>"notification", :stage=>0, :auth=>"God", :message=>"دالللیییی", :time=>2017-10-06 13:54:22 +0330}, "ZLHam4QGnby/etPQXcdiew=="=>{:id=>"ZLHam4QGnby/etPQXcdiew==", :name=>"notification", :stage=>0, :auth=>"God", :message=>"دالللیییی", :time=>2017-10-06 13:54:22 +0330}, "AkjzahZGl3U3cagizt/Jag=="=>{:id=>"AkjzahZGl3U3cagizt/Jag==", :name=>"notification", :stage=>0, :auth=>"God", :message=>"دالللیییی", :time=>2017-10-06 13:54:22 +0330}}}, :code=>1}
+D, [2017-10-06T13:55:51.280333 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:55:51.280401 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:55:53.506123 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:55:53.506303 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:01.288574 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:01.288722 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:04.508488 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:04.508650 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:11.298321 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:11.298479 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:15.505717 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:15.505886 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:21.308008 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:21.308165 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:26.505580 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:26.505759 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:31.318320 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:31.318489 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:37.505161 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:37.505317 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:41.328305 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:41.328462 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:48.505647 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:48.505807 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:51.338299 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:51.338457 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:56:59.505672 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:56:59.505842 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:01.346960 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:01.347111 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:10.505983 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:10.506159 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:11.356608 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:11.356777 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:21.368949 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:21.369137 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:21.505514 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:21.505671 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:31.380053 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:31.380247 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:32.505601 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:32.505754 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:41.392384 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:41.392550 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:43.506104 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:43.506284 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:46.891168 #9469] DEBUG -- : modules/server.rb , 108 {:tocken=>"672vlhQ8YDdFeHL5DCbtbg==", :hash=>"betSomethingBetter", :data=>{:b=>"hanna", :thing=>"10", :a=>"armin"}}
+D, [2017-10-06T13:57:51.402829 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:51.402992 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:57:54.506000 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:57:54.506173 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:01.416577 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:01.416727 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:05.505415 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:05.505634 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:11.426096 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:11.426246 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:16.506088 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:16.506235 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:21.433592 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:21.433661 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:27.505448 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:27.505683 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:31.440298 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:31.440442 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:38.505778 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:38.505931 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:41.448433 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:41.448482 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:49.505857 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:49.506007 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:58:51.454769 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:58:51.454910 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:00.503133 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:00.503203 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:01.464722 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:01.464864 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:11.474696 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:11.474876 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:11.505188 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:11.505334 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:21.485121 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:21.485271 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:22.505631 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:22.505767 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:31.495585 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:31.495745 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:33.505377 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:33.505565 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:41.506189 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:41.506336 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:44.505522 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:44.505661 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T13:59:51.516923 #9469] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T13:59:51.517072 #9469] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:00:32.460799 #9598] DEBUG -- : mafia.rb , 30 total open events: 1
+D, [2017-10-06T14:00:43.420895 #9598] DEBUG -- : modules/server.rb , 43 Armin  logged in
+D, [2017-10-06T14:00:43.428959 #9598] DEBUG -- : modules/server.rb , 59 LoginInfo {:info=>{:events=>[{"_id"=>BSON::ObjectId('59d75b489085ca257e811f56'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-06 10:30:32 UTC, "last_update"=>2017-10-06 10:30:32 UTC, "closed"=>false, "id"=>"V1ZWCnyY/qtJD4+1PODnYQ=="}], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{"V1ZWCnyY/qtJD4+1PODnYQ=="=>{:id=>"V1ZWCnyY/qtJD4+1PODnYQ==", :name=>"notification", :stage=>0, :auth=>"God", :message=>"دالللیییی", :time=>2017-10-06 14:00:32 +0330}}}, :code=>1}
+D, [2017-10-06T14:00:49.210507 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:00:49.210695 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:00:50.506102 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:00:50.506265 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:00:59.219928 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:00:59.220098 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:01.505431 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:01.505646 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:09.229037 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:09.229183 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:12.505451 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:12.505705 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:19.238995 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:19.239156 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:23.505528 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:23.505696 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:29.248525 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:29.248698 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:34.505729 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:34.505902 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:39.258346 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:39.258518 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:45.505943 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:45.506150 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:49.266983 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:49.267142 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:56.505422 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:56.505646 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:01:59.276173 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:01:59.276333 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:07.505397 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:07.505590 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:09.285888 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:09.286044 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:18.505621 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:18.505793 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:19.295553 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:19.295706 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:29.305216 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:29.305376 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:29.505748 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:29.505900 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:39.315518 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:39.315674 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:40.505586 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:40.505751 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:49.325233 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:49.325398 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:51.505713 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:51.505902 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:02:59.334887 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:02:59.335055 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:02.505866 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:02.506024 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:09.344417 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:09.344572 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:13.505451 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:13.505649 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:19.354095 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:19.354262 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:24.505572 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:24.505726 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:29.361639 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:29.361696 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:35.505567 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:35.505744 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:39.369265 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:39.369414 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:46.505806 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:46.505966 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:49.379016 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:49.379167 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:57.505714 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:57.505867 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:03:59.388885 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:03:59.389037 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:08.505647 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:08.505860 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:09.398077 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:09.398170 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:19.405829 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:19.406008 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:19.505785 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:19.505967 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:29.415885 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:29.416037 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:30.505736 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:30.505909 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:39.426339 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:39.426525 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:41.505698 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:41.505862 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:49.439218 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:49.439285 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:52.505265 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:52.505424 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:04:59.447186 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:04:59.447322 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:03.508570 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:03.508724 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:09.456681 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:09.456841 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:14.505758 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:14.505935 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:19.466430 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:19.466582 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:25.505627 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:25.505783 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:29.476299 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:29.476461 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:36.505888 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:36.506043 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:39.486871 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:39.487059 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:47.505687 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:47.505850 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:49.497656 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:49.497812 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:58.506013 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:58.506166 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:05:59.508238 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:05:59.508448 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:09.505546 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:09.505708 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:09.518041 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:09.518190 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:19.528928 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:19.529088 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:20.504946 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:20.505114 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:29.539607 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:29.539761 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:31.505726 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:31.505926 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:39.550527 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:39.550676 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:42.505826 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:42.505992 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:49.560091 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:49.560264 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:53.505731 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:53.505905 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:06:59.570512 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:06:59.570664 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:04.507663 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:04.507823 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:09.581126 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:09.581287 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:15.506413 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:15.506977 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:19.591705 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:19.591856 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:26.506010 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:26.506160 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:29.601652 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:29.601803 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:37.505989 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:37.506158 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:39.611395 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:39.611577 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:48.507685 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:48.507882 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:49.622180 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:49.622330 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:59.505866 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:59.506098 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:07:59.632930 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:07:59.633100 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:09.643228 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:09.643381 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:10.505540 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:10.505695 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:10.525596 #9598] DEBUG -- : modules/server.rb , 108 {:tocken=>"S7MwvbDhPMICI7vvP+lPjw==", :hash=>"betSomethingBetter", :data=>{:b=>"hanna", :a=>"armin"}}
+D, [2017-10-06T14:08:16.425638 #9598] DEBUG -- : modules/server.rb , 108 {:tocken=>"S7MwvbDhPMICI7vvP+lPjw==", :hash=>"betSomethingBetter", :data=>{:b=>"hanna", :a=>"armin", :thing=>"10"}}
+D, [2017-10-06T14:08:19.654326 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:19.654476 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:21.505826 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:21.505989 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:29.666344 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:29.666498 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:32.505529 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:32.505702 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:39.677258 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:39.677427 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:43.505842 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:43.506012 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:49.687977 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:49.688131 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:54.505851 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:54.506013 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:08:59.698728 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:08:59.698882 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:05.505794 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:05.505969 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:09.711019 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:09.711172 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:16.505785 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:16.505941 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:19.721152 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:19.721303 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:27.505877 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:27.506054 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:29.732182 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:29.732340 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:38.505535 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:38.505749 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:39.740417 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:39.740625 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:49.505805 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:49.505976 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:49.748981 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:49.749175 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:09:59.759220 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:09:59.759371 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:00.505840 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:00.506001 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:09.769291 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:09.769445 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:11.505719 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:11.505873 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:19.779424 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:19.779583 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:22.505008 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:22.505149 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:29.791057 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:29.791211 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:33.505426 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:33.505634 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:39.801311 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:39.801507 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:44.505547 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:44.505736 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:49.811393 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:49.811560 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:55.506124 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:55.506324 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:10:59.821552 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:10:59.821670 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:06.505336 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:06.505924 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:09.832437 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:09.832585 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:17.505590 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:17.505745 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:19.842321 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:19.842471 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:28.505838 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:28.505993 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:29.851598 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:29.851746 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:39.505509 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:39.505755 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:39.861233 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:39.861409 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:49.871752 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:49.871933 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:50.505979 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:50.506131 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:11:59.882474 #9598] DEBUG -- : modules/server.rb , 72user is armin
+D, [2017-10-06T14:11:59.882628 #9598] DEBUG -- : modules/server.rb , 74 Class Player ,Name: Armin,Id: armin,Gender: male
+
+D, [2017-10-06T14:20:00.840844 #9775] DEBUG -- : modules/game.rb , 34 initialize Event, child_self.hash is notification
+D, [2017-10-06T14:20:00.841662 #9775] DEBUG -- : mafia.rb , 30 total open events: 2
+D, [2017-10-06T14:20:31.959853 #9775] DEBUG -- : modules/server.rb , 43 Armin  logged in
+D, [2017-10-06T14:20:31.968423 #9775] DEBUG -- : modules/server.rb , 59 LoginInfo {:info=>{:events=>[{"_id"=>BSON::ObjectId('59d75b489085ca257e811f56'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-06 10:30:32 UTC, "last_update"=>2017-10-06 10:30:32 UTC, "closed"=>false, "id"=>"V1ZWCnyY/qtJD4+1PODnYQ=="}, {"_id"=>BSON::ObjectId('59d75d189085ca257e811f57'), "b"=>"hanna", "a"=>"armin", "thing"=>"10", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hannaِ2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-06 10:38:16 UTC, "last_update"=>2017-10-06 10:38:51 UTC, "closed"=>true, "id"=>"P7zMZLosEpaLif+zZVA5Tg=="}, {"_id"=>BSON::ObjectId('59d75fd89085ca262f3ca8b8'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-06 10:50:00 UTC, "last_update"=>2017-10-06 10:50:00 UTC, "closed"=>false, "id"=>"5UVmJBV8Tjwg1PGp3hT//A=="}], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{"V1ZWCnyY/qtJD4+1PODnYQ=="=>{:id=>"V1ZWCnyY/qtJD4+1PODnYQ==", :name=>"notification", :stage=>0, :auth=>"God", :message=>"دالللیییی", :time=>2017-10-06 14:20:00 +0330}, "5UVmJBV8Tjwg1PGp3hT//A=="=>{:id=>"5UVmJBV8Tjwg1PGp3hT//A==", :name=>"notification", :stage=>0, :auth=>"God", :message=>"دالللیییی", :time=>2017-10-06 14:20:00 +0330}}}, :code=>1}
+D, [2017-10-06T14:20:36.955492 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:20:36.956817 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:20:38.506247 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:20:46.962153 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:20:46.964988 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:20:49.505540 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:20:56.972429 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:20:56.975123 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:21:00.505765 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:06.982245 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:06.985011 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:21:11.505337 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:16.992977 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:16.995883 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:21:22.505546 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:27.003868 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:27.006675 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:21:33.505273 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:37.015142 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:37.017790 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:21:38.748872 #9775] DEBUG -- : modules/server.rb , 109 {:tocken=>"VrYwoqz83LJ89aTPj1hqRw==", :hash=>"betSomethingBetter", :data=>{:b=>"hanna", :thing=>"10", :a=>"armin"}}
+D, [2017-10-06T14:21:38.749235 #9775] DEBUG -- : modules/game.rb , 80 initialized SaySomething
+D, [2017-10-06T14:21:38.749364 #9775] DEBUG -- : modules/game.rb , 34 initialize Event, child_self.hash is betSomethingBetter
+D, [2017-10-06T14:21:39.874697 #9775] DEBUG -- : modules/game.rb , 269 BetSomethingBetter by god iter: 100
+D, [2017-10-06T14:21:44.505333 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:47.024743 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:47.027800 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[{"_id"=>BSON::ObjectId('59d7603a9085ca262f3ca8b9'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "status"=>"در انتظار پاسخ<span class='user_span'> hanna </span>", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-06 10:51:38 UTC, "last_update"=>2017-10-06 10:51:38 UTC, "closed"=>false, "id"=>"siBUL2Q0OOLiO9xnHHnE2A=="}], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:21:49.878244 #9775] DEBUG -- : modules/game.rb , 269 BetSomethingBetter by god iter: 110
+D, [2017-10-06T14:21:55.505298 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:57.034434 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:21:57.037155 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:21:59.881609 #9775] DEBUG -- : modules/game.rb , 269 BetSomethingBetter by god iter: 120
+D, [2017-10-06T14:22:06.505652 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:07.044312 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:07.046831 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:22:09.884286 #9775] DEBUG -- : modules/game.rb , 269 BetSomethingBetter by god iter: 130
+D, [2017-10-06T14:22:09.884640 #9775] DEBUG -- : modules/game.rb , 161 Rejected!
+D, [2017-10-06T14:22:17.054032 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:17.056866 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[{"_id"=>BSON::ObjectId('59d7603a9085ca262f3ca8b9'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hannaِ2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-06 10:51:38 UTC, "last_update"=>2017-10-06 10:52:09 UTC, "closed"=>true, "id"=>"siBUL2Q0OOLiO9xnHHnE2A=="}], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:22:17.505577 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:27.068581 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:27.069628 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:22:28.505528 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:37.077062 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:37.078761 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:22:39.505639 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:47.084750 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:47.087593 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:22:50.505746 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:57.505895 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:22:57.509030 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:23:01.487325 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:01.503896 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:07.646618 #9775] DEBUG -- : modules/server.rb , 43 Hanna  logged in
+D, [2017-10-06T14:23:07.651111 #9775] DEBUG -- : modules/server.rb , 59 LoginInfo {:info=>{:events=>[{"_id"=>BSON::ObjectId('59d75b489085ca257e811f56'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-06 10:30:32 UTC, "last_update"=>2017-10-06 10:30:32 UTC, "closed"=>false, "id"=>"V1ZWCnyY/qtJD4+1PODnYQ=="}, {"_id"=>BSON::ObjectId('59d75d189085ca257e811f57'), "b"=>"hanna", "a"=>"armin", "thing"=>"10", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hannaِ2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-06 10:38:16 UTC, "last_update"=>2017-10-06 10:38:51 UTC, "closed"=>true, "id"=>"P7zMZLosEpaLif+zZVA5Tg=="}, {"_id"=>BSON::ObjectId('59d75fd89085ca262f3ca8b8'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-06 10:50:00 UTC, "last_update"=>2017-10-06 10:50:00 UTC, "closed"=>false, "id"=>"5UVmJBV8Tjwg1PGp3hT//A=="}, {"_id"=>BSON::ObjectId('59d7603a9085ca262f3ca8b9'), "b"=>"hanna", "thing"=>"10", "a"=>"armin", "author"=>"armin", "status"=>"بیش از زمان مجاز گذشت.hannaِ2 تومان جریمه شد.", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-06 10:51:38 UTC, "last_update"=>2017-10-06 10:52:09 UTC, "closed"=>true, "id"=>"siBUL2Q0OOLiO9xnHHnE2A=="}], :resources=>{"money"=>48.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}, :code=>1}
+D, [2017-10-06T14:23:08.505975 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:08.506159 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:08.509249 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:23:11.518689 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:11.518758 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:11.519782 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>48.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:23:12.505816 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:12.505968 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:19.504183 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:19.504248 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:19.505315 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:23:21.523549 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:21.523633 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:21.525150 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>48.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:23:23.505769 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:23.505957 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:30.505589 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:30.505757 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:30.508413 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:23:31.530634 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:31.530781 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:31.533403 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>48.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:23:34.505631 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:34.505787 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:41.505744 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:41.505899 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:41.508709 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:23:42.505366 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:42.505568 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:42.507429 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>48.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:23:44.512234 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:44.512395 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:49.244383 #9775] DEBUG -- : modules/server.rb , 109 {:tocken=>"oyxguv6OQ+O5qAHjNlxIVA==", :hash=>"betSomethingBetter", :data=>{:b=>"hanna", :thing=>"12", :a=>"hanna"}}
+D, [2017-10-06T14:23:52.505221 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:52.505382 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:52.507879 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:23:53.505989 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:53.506131 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:23:53.509256 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>48.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:23:55.506123 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:23:55.506335 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:02.388185 #9775] DEBUG -- : modules/server.rb , 109 {:tocken=>"oyxguv6OQ+O5qAHjNlxIVA==", :hash=>"betSomethingBetter", :data=>{:b=>"hanna", :thing=>"12", :a=>"hanna"}}
+D, [2017-10-06T14:24:03.505696 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:03.505845 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:03.508450 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:24:04.506055 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:04.506197 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:04.508629 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>48.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:24:05.513781 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:05.513924 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:05.895631 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:05.895738 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:13.515885 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:13.516039 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:13.518396 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:24:15.505145 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:15.505297 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:15.507724 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>48.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:24:20.547141 #9775] DEBUG -- : modules/server.rb , 109 {:tocken=>"VrYwoqz83LJ89aTPj1hqRw==", :hash=>"betSomethingBetter", :data=>{:b=>"hanna", :thing=>"12", :a=>"armin"}}
+D, [2017-10-06T14:24:20.547474 #9775] DEBUG -- : modules/game.rb , 80 initialized SaySomething
+D, [2017-10-06T14:24:20.547585 #9775] DEBUG -- : modules/game.rb , 34 initialize Event, child_self.hash is betSomethingBetter
+D, [2017-10-06T14:24:23.523934 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:23.524081 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:23.527082 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[{"_id"=>BSON::ObjectId('59d760dc9085ca262f3ca8ba'), "b"=>"hanna", "thing"=>"12", "a"=>"armin", "author"=>"armin", "status"=>"در انتظار پاسخ<span class='user_span'> hanna </span>", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-06 10:54:20 UTC, "last_update"=>2017-10-06 10:54:20 UTC, "closed"=>false, "id"=>"CIOMIcS54E/L5rIA669reA=="}], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:24:26.505594 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:26.505739 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:26.508707 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[{"_id"=>BSON::ObjectId('59d760dc9085ca262f3ca8ba'), "b"=>"hanna", "thing"=>"12", "a"=>"armin", "author"=>"armin", "status"=>"در انتظار پاسخ<span class='user_span'> hanna </span>", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-06 10:54:20 UTC, "last_update"=>2017-10-06 10:54:20 UTC, "closed"=>false, "id"=>"CIOMIcS54E/L5rIA669reA=="}], :resources=>{"money"=>48.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{"CIOMIcS54E/L5rIA669reA=="=>{:id=>"CIOMIcS54E/L5rIA669reA==", :name=>"betSomethingBetter", :stage=>0, :a=>"armin", :thing=>12, :time=>2017-10-06 14:24:20 +0330}}}}
+D, [2017-10-06T14:24:29.926297 #9775] DEBUG -- : modules/game.rb , 269 BetSomethingBetter by god iter: 270
+D, [2017-10-06T14:24:34.505828 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:34.505962 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:34.508376 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>52.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:24:36.518148 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:36.518299 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:36.520879 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>48.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:24:37.262749 #9775] DEBUG -- : modules/server.rb , 155 {:info=>{}, :tocken=>"BYj9GOaOkwwczr2nyvd5NQ==", :name=>"betSomethingBetter", :id=>"CIOMIcS54E/L5rIA669reA==", :method=>"accept"}
+D, [2017-10-06T14:24:37.262934 #9775] DEBUG -- : modules/game.rb , 133 BetSomething accept 
+ hanna 
+ {o[:info]}
+D, [2017-10-06T14:24:37.263029 #9775] DEBUG -- : modules/game.rb , 145 WINNER IS : b 
+ message: شما12 تومان بردید
+D, [2017-10-06T14:24:37.265898 #9775] DEBUG -- : modules/game.rb , 34 initialize Event, child_self.hash is notification
+D, [2017-10-06T14:24:45.505789 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:45.505937 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:45.510029 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[{"_id"=>BSON::ObjectId('59d760dc9085ca262f3ca8ba'), "b"=>"hanna", "thing"=>"12", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> hanna </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-06 10:54:20 UTC, "last_update"=>2017-10-06 10:54:37 UTC, "closed"=>true, "id"=>"CIOMIcS54E/L5rIA669reA=="}, {"_id"=>BSON::ObjectId('59d760ed9085ca262f3ca8bb'), "to"=>"armin", "message"=>"شما 12تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-10-06 10:54:37 UTC, "last_update"=>2017-10-06 10:54:37 UTC, "closed"=>false, "id"=>"mdy2OfPUoGTHG2ixW8mz7w=="}], :resources=>{"money"=>40.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{"mdy2OfPUoGTHG2ixW8mz7w=="=>{:id=>"mdy2OfPUoGTHG2ixW8mz7w==", :name=>"notification", :stage=>0, :auth=>"BetSomethingBetter#accept", :message=>"شما 12تومان بهhanna باختید", :time=>2017-10-06 14:24:37 +0330}}}}
+D, [2017-10-06T14:24:46.527721 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:46.527875 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:46.531003 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[{"_id"=>BSON::ObjectId('59d760dc9085ca262f3ca8ba'), "b"=>"hanna", "thing"=>"12", "a"=>"armin", "author"=>"armin", "status"=>"پذیرفتنه شد. <span class='user_span'> hanna </span>برد", "hash"=>"betSomethingBetter", "time_stamp"=>2017-10-06 10:54:20 UTC, "last_update"=>2017-10-06 10:54:37 UTC, "closed"=>true, "id"=>"CIOMIcS54E/L5rIA669reA=="}, {"_id"=>BSON::ObjectId('59d760ed9085ca262f3ca8bb'), "to"=>"armin", "message"=>"شما 12تومان بهhanna باختید", "auth"=>"BetSomethingBetter#accept", "hash"=>"notification", "time_stamp"=>2017-10-06 10:54:37 UTC, "last_update"=>2017-10-06 10:54:37 UTC, "closed"=>false, "id"=>"mdy2OfPUoGTHG2ixW8mz7w=="}], :resources=>{"money"=>60.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:24:56.505622 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:56.505805 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:56.508829 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>40.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:24:56.545951 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:24:56.546092 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:24:56.548683 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>60.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:25:06.556074 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:06.556228 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:06.558917 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>60.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:25:07.506402 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:07.506556 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:07.509220 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>40.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:25:16.566363 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:16.566517 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:16.569169 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>60.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:25:18.505894 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:18.506042 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:18.508978 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>40.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:25:26.576747 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:26.576894 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:26.579754 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>60.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:25:29.505591 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:29.505774 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:29.509539 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>40.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:25:36.587985 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:36.588131 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:36.590772 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>60.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:25:40.505929 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:40.506116 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:40.509237 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>40.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:25:46.598231 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:46.598384 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:46.600997 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>60.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}
+D, [2017-10-06T14:25:51.505231 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:51.505383 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:51.508090 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>40.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+D, [2017-10-06T14:25:56.608431 #9775] DEBUG -- : modules/server.rb , 72 /update user is armin
+D, [2017-10-06T14:25:56.608575 #9775] DEBUG -- : modules/server.rb , 72 /update user is hanna
+D, [2017-10-06T14:25:56.611244 #9775] DEBUG -- : modules/server.rb , 96 {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}, {:user=>"hanna", :name=>"Hanna", :gender=>:female}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>60.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"choobin"}, :tasks=>{}}}

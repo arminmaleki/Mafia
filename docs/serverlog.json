@@ -1,0 +1,22 @@
+
+modules/server.rb , 59 LoginInfo {:info=>
+
+				  {:events=>
+				   [{"_id"=>BSON::ObjectId('59d75b489085ca257e811f56'), "to"=>"armin", "message"=>"دالللیییی", "auth"=>"God", "hash"=>"notification", "time_stamp"=>2017-10-06 10:30:32 UTC, "last_update"=>2017-10-06 10:30:32 UTC, "closed"=>false, "id"=>"V1ZWCnyY/qtJD4+1PODnYQ=="}],
+				   :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"},
+				   :tasks=>{
+				       "V1ZWCnyY/qtJD4+1PODnYQ=="=>
+					   {:id=>"V1ZWCnyY/qtJD4+1PODnYQ==", :name=>"notification", :stage=>0, :auth=>"God", :message=>"دالللیییی", :time=>2017-10-06 14:00:32 +0330}}},
+
+
+
+
+				  :code=>1}
+
+modules/server.rb , 108 register_event {:tocken=>"S7MwvbDhPMICI7vvP+lPjw==", :hash=>"betSomethingBetter", :data=>{:b=>"hanna", :a=>"armin", :thing=>"10"}}
+
+
+
+modules/server.rb , 96 update {:online=>[{:user=>"armin", :name=>"Armin", :gender=>:male}], :code=>1, :info=>{:events=>[], :resources=>{"money"=>50.0, "reputation"=>10.0, "freetime"=>100.0, "img"=>"toushishan"}, :tasks=>{}}}
+
+ modules/server.rb , 155 update_event {:info=>{}, :tocken=>"BYj9GOaOkwwczr2nyvd5NQ==", :name=>"betSomethingBetter", :id=>"CIOMIcS54E/L5rIA669reA==", :method=>"accept"}
