@@ -1,0 +1,20 @@
+<div style="background-color: #fcc; padding:5px; direction:rtl; text-align:right;">
+<!--
+would you bet {{$ctrl.data.thing}} dollars with {{$ctrl.data.a}} on a coin flip?
+{{$ctrl.Auth.tocken}}
+<br> -->
+<span style="margin-left:30px; text-align:right; direction:rtl; font-weight:bold;"> توجه </span>
+<br>
+
+<span style="margin-left:30px; text-align:right; direction:rtl;color:red;font-weight:bold;">{{$ctrl.data.message}}</span>
+
+
+<button ng-show="!$ctrl.message_visible" ng-click="$ctrl.accept()"> باشه </button>
+
+					     
+</div>
+
+
+<div ng-show="$ctrl.message_visible">
+ {{$ctrl.message}}
+</div>

@@ -433,9 +433,9 @@ module God
   def self.every_second iter
     Login.prune_users
 
-      puts "God iter"
+#      puts "God iter"
       EventList.each do |id,event|
-        puts "god says "+event.to_s
+#        puts "god says "+event.to_s
         if event.respond_to? :by_god then
           event.by_god iter
         end
