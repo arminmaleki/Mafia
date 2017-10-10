@@ -5,6 +5,7 @@ class Event
     def self.optionals; {}; end
     def self.stateless; false; end
     def self.hash; "default"; end
+    def self.visible(o); return ":all" ; end
     attr_reader :options,:id;
     
     def self.condition(o,child_self=Event)
@@ -20,6 +21,7 @@ class Event
       if (commit == :commit) then
         @id=SecureRandom.base64
         o[:hash]=child_self.hash
+        o[:visible]=child_self.visible(o)
         $log.debug("#{__FILE__} , #{__LINE__} initialize Event, child_self.hash is #{child_self.hash}")
       o[:time_stamp]=DateTime.parse(Time.new.to_s)
       

@@ -69,7 +69,7 @@ App.post '/update' do
   #time=Time.new
   Game::Login.by_user.keys.each do |user|
     o={}
-   $log.debug("#{__FILE__} , #{__LINE__} /update user is #{user}")
+  # $log.debug("#{__FILE__} , #{__LINE__} /update user is #{user}")
    
  #  $log.debug("#{__FILE__} , #{__LINE__} #{Game::Player.players[user]}")
     o[:user]=user.to_s
@@ -93,7 +93,7 @@ App.post '/update' do
       user_login=Game::Login.by_tocken[data[:tocken]]
       new_events=Database.events_later_than(user_login.last_check_time)
       res[:info]=user_login.player.info user_login.last_check_time
-       $log.debug("#{__FILE__} , #{__LINE__} #{res}")
+   #    $log.debug("#{__FILE__} , #{__LINE__} #{res}")
       Game::Login.by_tocken[data[:tocken]].check
     end
   end
@@ -164,7 +164,15 @@ App.post '/update_event' do
     return  res.to_json
   end
   user_login=Game::Login.by_tocken[data[:tocken]]
-  event=Game::EventList[data[:id]]
+  if (data.key? :id ) then
+    event=Game::EventList[data[:id]]
+  else
+    event=Game::EventHash[data[:name]]
+    $log.debug("#{__FILE__} #{__LINE__} update_event withoud ID! #{data[:name]}");
+     $log.debug("#{__FILE__} #{__LINE__} update_event withoud ID! #{event} #{event.respond_to? data[:method]} #{data[:method]}");
+    
+   
+  end
   if (not event.respond_to? data[:method]) then
     res[:code]=Enum::Update[:invalid_event]
     return res.to_json

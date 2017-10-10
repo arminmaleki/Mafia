@@ -1,0 +1,25 @@
+<div style="background-color: #fcc; padding:5px; direction:rtl; text-align:right;
+
+position:relative;float:right; width:calc(100% - 20px)">
+  <span style="font-weight:bold; color: {{$ctrl.toggle_enter_color()}}" >{{$ctrl.data.name}} </span>
+  <button ng-click="$ctrl.toggle_more()"> {{$ctrl.toggle_more_text()}}</button>
+  <button ng-click="$ctrl.enter_button()"> {{$ctrl.toggle_enter_text()}}</button>
+  <br>
+  <div ng-show="$ctrl.data.more" style="position:relative;float:right;width:100%;">
+   
+   
+      <div ng-bind-html="$ctrl.renderHtml($ctrl.data.details)" style="position:relative;float:right; width: calc(100% - 20px);margin:5px;"> diiiv</div>
+       <br>
+  افراد توی پاتوق
+       <br>
+       <span ng-repeat="insider in $ctrl.data.insides" style="margin-left:15px; text-align:right; direction:rtl; color:red;">
+	 {{insider}}
+	 </span>
+</div>
+  </div>
+ 
+<div ng-show="$ctrl.message_show">
+ 
+  {{$ctrl.message}}
+  </div>
+

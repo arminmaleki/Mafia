@@ -25,20 +25,25 @@ o={b:'armin',a:'hanna',thing:'10'}
 #puts Database.events_later_than(t)
 #puts Database.events_later_than(Time.now)
 
-o={to:'armin',message:'دالللیییی',auth:'God'}
-Game::Notification.new(o,:commit)
+#o={to:'armin',message:'دالللیییی',auth:'God'}
+#Game::Notification.new(o,:commit)
+#o={message:"آفرین صد آفرین" ,visible: ["armin"]}
+#Game::Announce.new(o,:commit)
+o={user: "armin",  location: "casino"}
+puts "Enter Location condition:"+Game::EnterLocation.condition(o).to_s
+#Game::EnterLocation.new(o,:commit)
+
 $log.debug("#{__FILE__} , #{__LINE__} total open events: #{Game::EventList.size}");
 def start_God
   iter=0
  
-  
-    loop do
+   loop do 
       iter+=1
     
     Game::God.every_second iter
     sleep 1
     
-    end
+   end
 
 end
 load 'modules/server.rb'
