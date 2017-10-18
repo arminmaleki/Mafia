@@ -18,6 +18,8 @@ module Game
   require_relative 'events/bet_something'
   require_relative 'events/bet_something_better'
   require_relative 'events/notification'
+  require_relative 'events/message_to_group'
+
   #  require_relative 'locations/location'
   require_relative 'locations/casino'
   
@@ -109,7 +111,7 @@ module Game
       end
       #  puts "resources: "+ @resources.to_s
       
-      info={events: events,resources: @resources,tasks: tasks,locations: locations}
+      info={events: events,resources: @resources,tasks: tasks,locations: locations,groups: Groups.all_groups(self)}
       info
     end
     def add_task(id,o)

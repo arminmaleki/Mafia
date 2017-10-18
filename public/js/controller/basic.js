@@ -18,6 +18,7 @@ app.controller('basic',function ($rootScope,$scope,$http,Auth,Info,$sce){
     $scope.working="<span> AngularJS </span>";
    
     $scope.Auth=Auth;
+    $scope.Info=Info;
     $scope.credentials={};
     $scope.login=function (credentials){console.log("submitted " + credentials.username);
 					if (Auth.authenticate(credentials.username,credentials.password)) $rootScope.$broadcast('authorized');      //$scope.authorized=Auth.authorized;

@@ -41,7 +41,7 @@
 </div>
  <!-- {{event.hash}} from {{event.a}} to {{event.b}} message: {{event.thing}} <br>
 $sce.trustAsHtml(event.status) -->
- <div ng-if="(event.hash=='enterLocation') || (event.hash=='announce')" style="background-color: #fcc; padding:5px;">
+ <div ng-if="(event.hash=='messageToGroup') ||(event.hash=='enterLocation') || (event.hash=='announce')" style="background-color: #fcc; padding:5px;">
    <div style=" text-align:right; direction:rtl;" ng-bind-html="$parent.renderHtml(event.message)"></div >
 </div>
 </div>

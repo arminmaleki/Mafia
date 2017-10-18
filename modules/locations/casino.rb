@@ -33,10 +33,12 @@ module Game
                     
       end
       def self.user_exits options,commit
+        puts "user is exiting"+ options[:user].to_s
         Description[:last_update]=Time.now
         if (Time.new-Time.parse(options[:time_stamp].to_s)<40) then
            return {ok: false, code: -4, message: "به این زودی کجا؟؟"}
         end
+        puts "user is exiting"+ options[:user].to_s+Description[:group].to_s
         Groups.remove_member(Description[:group],options[:user])
          return {ok: true, code: 1, message: "موفقیت آمیز"}
       end

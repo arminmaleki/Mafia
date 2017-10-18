@@ -1,0 +1,202 @@
+POST http://localhost:3000/login
+
+{ "user": "armin", "pass": "1234"}
+#
+
+POST http://localhost:3000/update
+
+{ "tocken": "M7wlXn5iDviiDA+EjLNKLg=="}
+#
+answer:
+{
+    "online": [],
+    "code": 1,
+    "info": {
+        "events": [
+            {
+                "_id": {
+                    "$oid": "59e5d7189085ca43cb33d716"
+                },
+                "a": "armin",
+                "b": "hanna",
+                "thing": "hello",
+                "author": "armin",
+                "hash": "saySomething",
+                "visible": [
+                    "armin",
+                    "hanna"
+                ],
+                "time_stamp": "2017-10-17\n10:10:32 UTC",
+                "last_update": "2017-10-17 10:10:32\nUTC",
+                "closed": true,
+                "id": "HWGIgU7safzfQcell\/azng=="
+            }
+        ],
+        "resources": {
+            "money": 50.0,
+            "reputation": 10.0,
+            "freetime": 100.0,
+            "img": "toushishan"
+        },
+        "tasks": {
+        },
+        "locations": []
+    }
+}
+#
+
+POST http://localhost:3000/register_event
+
+{ "tocken": "sxeGL8n/V8hbUtMErWwdJA==", "hash":"saySomething", "data": {"a": "armin" , "b": "hanna" , "thing":"hello"}}
+#
+answer
+{"code":1,"event_code":1,"message":"موفقیت آمیز"}
+
+POST http://localhost:3000/register_event
+
+{ "tocken": "M7wlXn5iDviiDA+EjLNKLg==", "hash":"enterLocation", "data": {"user": "armin" , "location":"casino"}}
+#
+{"code":1,"event_code":1,"message":"موفقیت آمیز"}
+
+POST http://localhost:3000/update_event
+
+{
+    "tocken": "M7wlXn5iDviiDA+EjLNKLg==",
+    "info": {
+        "user": "armin",
+        "location": "casino"
+    },
+    "name": "enterLocation",
+    "method": "get_out"
+}
+#
+{"message":{"ok":true,"code":1,"message":"موفقیت آمیز"},"code":1}
+
+POST http://localhost:3000/login
+
+{ "user": "hanna", "pass": "1234"}
+#
+{"success":true,"message":"Authenticated","tocken":"S5W3y0qLEtiYaOD09IPfkA==","code":1}
+
+POST http://localhost:3000/loginInfo
+
+{ "tocken":"S5W3y0qLEtiYaOD09IPfkA=="}
+
+{
+    "info": {
+        "events": [
+            {
+                "_id": {
+                    "$oid": "59dd2a7b9085ca0e3db3fb7f"
+                },
+                "user": "hanna",
+                "location": "casino",
+                "author": "hanna",
+                "message": "hanna \u0631\u0641\u062a  \u0637\u0631\u0641 \u0622\u0642 \u0633\u06cc\u0627",
+                "hash": "enterLocation",
+                "visible": [
+                    ":all"
+                ],
+                "time_stamp": "2017-10-10 20:15:55 UTC",
+                "last_update": "2017-10-10 20:18:20 UTC",
+                "closed": true,
+                "id": "ul4jjp6NGYELUlzvUhEJsg=="
+            }
+        ],
+        "resources": {
+            "money": 50.0,
+            "reputation": 10.0,
+            "freetime": 100.0,
+            "img": "choobin"
+        },
+        "tasks": {
+        },
+        "locations": [
+            {
+                "name": "\u0637\u0631\u0641 \u0622\u0642 \u0633\u06cc\u0627",
+                "details": ".....",
+                "group": "casino",
+                "ticket": 10,
+                "last_update": "2017-10-17 14:00:22 +0330",
+                "hash": "casino",
+                "inside": false,
+                "insides": []
+            }
+        ]
+    },
+    "code": 1
+}
+
+
+#
+POST http://localhost:3000/register_event
+
+{ "tocken": "sxeGL8n/V8hbUtMErWwdJA==", "hash":"betSomethingBetter", "data": {"a": "armin" , "b": "hanna" , "thing":100}}
+#
+POST http://localhost:3000/login
+
+{ "user": "hanna", "pass": "1234"}
+#
+POST http://localhost:3000/loginInfo
+
+{ "tocken":"XDcOLeentOFpThlBIvvPxg=="}
+#
+
+POST http://localhost:3000/update
+
+{ "tocken": "XDcOLeentOFpThlBIvvPxg=="}
+#
+
+{
+    "online": [],
+    "code": 1,
+    "info": {
+        "events": [
+            {
+                "_id": {
+                    "$oid": "59e5e1019085ca45db00ece1"
+                },
+                "a": "armin",
+                "b": "hanna",
+                "thing": "hello",
+                "author": "armin",
+                "status": "\u062f\u0631 \u0627\u0646\u062a\u0638\u0627\u0631 \u067e\u0627\u0633\u062e<span class='user_span'> hanna <\/span>",
+                "hash": "betSomethingBetter",
+                "visible": ":all",
+                "time_stamp": "2017-10-17 10:52:49 UTC",
+                "last_update": "2017-10-17 10:52:49 UTC",
+                "closed": false,
+                "id": "npldq6XSceCa4MSa7ks+MA=="
+            }
+        ],
+        "resources": {
+            "money": 48.0,
+            "reputation": 10.0,
+            "freetime": 100.0,
+            "img": "choobin"
+        },
+        "tasks": {
+            "npldq6XSceCa4MSa7ks+MA==": {
+                "id": "npldq6XSceCa4MSa7ks+MA==",
+                "name": "betSomethingBetter",
+                "stage": 0,
+                "a": "armin",
+                "thing": 0,
+                "time": "2017-10-17 14:22:49 +0330"
+            }
+        },
+        "locations": []
+    }
+}
+
+
+POST http://localhost:3000/update_event
+
+{
+    "tocken": "XDcOLeentOFpThlBIvvPxg==",
+    "id": "+szCtaP5GWCAKRARQBj8Tw==",
+    "info": {
+    },
+    "name": "betSomethingBetter",
+    "method": "accept"
+}

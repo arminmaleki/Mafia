@@ -51,7 +51,7 @@
 </div>
 <div ng-show="show=='actions'">
 <say-something></say-something>
-       <bet-something></bet-something>
+       <bet-something ng-if="Info.groups.indexOf(':casino')>=0"></bet-something>
 </div>
 <div ng-show="show=='tasks'">
 <tasks></tasks>
