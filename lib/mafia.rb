@@ -7,8 +7,8 @@ require 'logger'
 
 $log=Logger.new('mafia.log')
 
-load 'modules/game.rb'
-load 'modules/database.rb'
+require_relative 'mafia/game'
+require_relative 'mafia/database'
 #Database.test_db
 Database.populate
 Database.load_open_events
@@ -43,11 +43,19 @@ def start_God
     Game::God.every_second iter
     sleep 1
     
-   end
+    end
 
 end
-load 'modules/server.rb'
+
+require_relative 'mafia/server.rb'
 Thread.abort_on_exception=true
-Thread.new do
+module Run 
+GodThread=Thread.new do
+  puts "Here is God!!!"
 start_God
 end
+ 
+end
+ #Server::App.run!
+
+#start_game.call

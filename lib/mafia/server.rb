@@ -17,7 +17,7 @@ App=Sinatra::Application
 App.set :port, 3000
 App.set :environment, :production
 App.set :public_folder, "./public"
-
+#App.run!
 App.get '/hello' do
   "<h1> Hello world! </h1>"
 end
@@ -189,4 +189,6 @@ end
 #  res.to_json
 #end
 #end
+#App.run!
 end
+
