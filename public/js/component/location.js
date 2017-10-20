@@ -10,6 +10,7 @@ angular.module('mainApp')
 
 		    this.Auth=Auth;
 		    this.Info=Info;
+		    $scope.message_box="پیام خود را وارد کنید";
 		    var component=this;
 		    var enter_text="ورود";
 		    var exit_text="خروج";
@@ -17,6 +18,20 @@ angular.module('mainApp')
 		    var more_text="بیشتر";
 		    var inside_color="red";
 		    var outside_color="black";
+		    var controller=this;
+		    this.button_disabled=function(){
+			if (controller.data.inside) return ""; else return "disabled";
+		    };
+
+		    this.send_message=function(){
+			var req= {"tocken":Auth.tocken,"hash":"messageToGroup"
+				    ,"data":{"message":$scope.message_box
+					     ,"group": ":"+controller.data.group }};
+			console.log("send_message");
+			console.log(req);
+			$http.post("/register_event",req);
+
+		    };
 		    this.toggle_more_text=function()
 		    {if (this.data.more) return less_text; else return more_text;};
 		    this.toggle_enter_color=function()
@@ -28,22 +43,21 @@ angular.module('mainApp')
 		    this.toggle_more=function(){
 			if (component.data.more)
 			{//component.toggle_more_text=more_text;
-			 console.log("toggle more was set");
-			 component.data.more=false;}
+			    console.log("toggle more was set");
+			    component.data.more=false;}
 			else{// component.toggle_more_text=less_text;
-			      component.data.more=true;
-			      console.log("toggle more was not set");}
+			    component.data.more=true;
+			    console.log("toggle more was not set");}
 
 		    };
 		    
-		   
+		    
 
 		    
-		     this.button_decided=false;
+		    this.button_decided=false;
 		    // this.message="";
 		    //console.log(this);
 		    //console.log(this.data);
-		    var controller=this;
 		    var req={};
 		    
 		    // req.id=controller.data.id;
@@ -112,7 +126,7 @@ angular.module('mainApp')
 
 		    $scope.$on('location_update',function(){
 			console.log("I know! locations");
-		
+			
 
 		    });
 		    

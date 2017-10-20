@@ -69,14 +69,14 @@ module Groups
      end
      if player.class== Symbol or (player.class== String and player[0]==":") then
        res=$client[:groups].find({name: player_q})
-       if (res.count==0) then; puts "lesser group not found"; return false; end
+       if (res.count==0) then; $Log.debug" #{__FILE__} #{__LINE__}lesser group not found"; return false; end
        groups=res.first[:groups]
        groups << query # query is qualified group name
        groups.uniq!
        res=$client[:groups].update_one({name: player_q},{"$set": {groups: groups}})
      else
        res=$client[:players].find({user: player_q})
-       if (res.count==0) then; puts "player not found"; return false; end
+       if (res.count==0) then; $Log.debug" #{__FILE__} #{__LINE__}player not found"; return false; end
        groups=res.first[:groups]
        groups << query # query is qualified group name
        groups.uniq!
@@ -84,18 +84,18 @@ module Groups
  
      end
      #if (player.class==String and player[0]!=":" )
-     puts "putting member #{player_q} in group #{group}"
+    # $Log.debug" #{__FILE__} #{__LINE__}putting member #{player_q} in group #{group}"
      res=$client[:groups].find({name: query})
      if (res.count==0) then;return false;end
      members=res.first[:members]
-     #puts "members first:"+members.to_s
+     #$Log.debug" #{__FILE__} #{__LINE__}members first:"+members.to_s
      if not members.include? player_q then
        members.push player_q
-       #puts "members"+members.to_s
+       #$Log.debug" #{__FILE__} #{__LINE__}members"+members.to_s
        $client[:groups].update_one({name: query},{"$set":{members: members}})
      end
      #res=$client[:players].find({user: player_q})
-     #if res.count==0 then; puts "player not found"; return false; end
+     #if res.count==0 then; $Log.debug" #{__FILE__} #{__LINE__}player not found"; return false; end
   end
 
   def self.remove_member(group,player)
@@ -111,14 +111,14 @@ module Groups
      end
      if player.class!= Game::Player and not (player.class==String and player[0]!=":") then
        res=$client[:groups].find({name: player_q})
-       if (res.count==0) then; puts "lesser group not found"; return false; end
+       if (res.count==0) then; $Log.debug" #{__FILE__} #{__LINE__}lesser group not found"; return false; end
        groups=res.first[:groups]
        groups.delete query # query is qualified group name
        #groups.uniq!
        res=$client[:groups].update_one({name: player_q},{"$set": {groups: groups}})
      else
         res=$client[:players].find({user: player_q})
-       if (res.count==0) then; puts "player not found"; return false; end
+       if (res.count==0) then; $Log.debug" #{__FILE__} #{__LINE__}player not found"; return false; end
        groups=res.first[:groups]
        groups.delete query # query is qualified group name
        #groups.uniq!
@@ -128,7 +128,7 @@ module Groups
       res=$client[:groups].find({name: query})
      if (res.count==0) then;return false;end
      members=res.first[:members]
-     #puts "members first:"+members.to_s
+     #$Log.debug" #{__FILE__} #{__LINE__}members first:"+members.to_s
      if  members.include? player_q then
        members.delete(player_q)
          $client[:groups].update_one({name: query},{"$set":{members: members}})
@@ -138,7 +138,7 @@ module Groups
   def self.all_groups obj
     if (obj.class==Game::Player or (obj.class==String and obj[0]!=":")) then
       if (obj.class==Game::Player) then; user=obj.user else user=obj end
-      puts user
+     # puts user
       obj_str=user
       res=$client[:players].find({user: user})
       if (res.count==0) then; return []; end
@@ -156,8 +156,8 @@ module Groups
       all += self.all_groups group
       all.uniq!
     end
-    puts "All groups : " + obj_str
-    puts all
+   # $Log.debug" #{__FILE__} #{__LINE__}All groups : " + obj_str
+   # puts all
     all
                           
   end

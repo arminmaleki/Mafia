@@ -43,7 +43,9 @@ module Game
          return {ok: true, code: 1, message: "موفقیت آمیز"}
       end
       def self.by_god iter, options
-        puts "user #{options[:user]} is inside casino"
+        if iter%20 ==0 then
+          puts "user #{options[:user]} is inside casino"
+        end
       end
     end
   end

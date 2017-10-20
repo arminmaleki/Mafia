@@ -60,12 +60,12 @@ module Game
         "Id: "+ @user.to_s + "," +
         "Gender: "+ @gender.to_s+"\n" 
     end
-    def info(time=:login)
+    def info(login=:login)
       events=[]
       locations=[]
       #resources={}
       tasks={}
-      if (time == :login) then
+      if (login == :login) then
         $client[:events].find.each do |event|
           if Groups.is_member(self,event[:visible]) then; events << event ;end
         end
@@ -81,11 +81,26 @@ module Game
         end
         
       else
-        
+        time=login.last_check_time
         #      puts "info setting new "+@user
         Database.events_later_than(time).each do |event|
           if Groups.is_member(self,event[:visible]) then; events << event ;end
         end
+        diff_group=Groups.all_groups(self)-login.groups
+        puts "diff_group: #{diff_group}"
+        if (diff_group.size>0) then
+          #binding.pry
+          puts "there is a new group"
+          $client[:events].find.each do |event|
+            eshterak=event[:visible]-(event[:visible]-diff_group)
+            
+          if eshterak.size>0 then; events << event ;end
+          end
+         
+        end
+         login.groups=Groups.all_groups(self)
+          puts "login.groups #{login.groups}"
+
         Game::Locations::LocationHash.each do |hash,desc|
           if (desc[:last_update]> time) then
             o=desc.clone
@@ -140,13 +155,14 @@ module Game
     end
 
     attr_reader :last_check_time,:login_time,:user,:tocken,:player
+    attr_accessor :groups
     def initialize(user)
       @tocken=SecureRandom.base64
       @user=user.to_s
       @player=Player.players[@user]
       @login_time=Time.new
       @last_check_time=@login_time
-      
+      @groups=Groups.all_groups @player
       
       @@by_tocken[@tocken]=self
       @@by_user[user.to_s]=self

@@ -1,4 +1,4 @@
-
+require 'mongo'
 module Database
 def self.mongo_connect
 Mongo::Logger.logger.level = Logger::FATAL
@@ -21,6 +21,12 @@ Game::Player.new(doc)
 end
 end
 
+def self.clean
+  $client[:events].delete_many({})
+  $client[:groups].update_many({},{"$set":{groups: []}})
+  $client[:groups].update_many({},{"$set":{members: []}})
+  $client[:players].update_many({},{"$set":{groups: []}})
+end
 def self.load_open_events
   $client[:events].find({closed: false}).each do |doc|
     

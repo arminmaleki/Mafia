@@ -4,7 +4,7 @@ module Game
     def self.requirements; { message:"string",  group: "group"} ; end
     def self.stateless; true; end
     def self.hash; "messageToGroup"; end
-    def self.visible(o); o[:group]; end
+    def self.visible(o); [o[:group]]; end
     Game::EventHash[self.hash]=self
     def initialize(o,commit,child_self=MessageToGroup)
       o[:message]= "<span class='user_span'>" +o[:author] +":  </span> <span>"+o[:message]+"</span>"

@@ -91,8 +91,8 @@ App.post '/update' do
       code=Enum::Update[:logged_in]
       res={online: online,code: code}
       user_login=Game::Login.by_tocken[data[:tocken]]
-      new_events=Database.events_later_than(user_login.last_check_time)
-      res[:info]=user_login.player.info user_login.last_check_time
+   #   new_events=Database.events_later_than(user_login.last_check_time)
+      res[:info]=user_login.player.info user_login
    #    $log.debug("#{__FILE__} , #{__LINE__} #{res}")
       Game::Login.by_tocken[data[:tocken]].check
     end

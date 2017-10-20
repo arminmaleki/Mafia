@@ -9,7 +9,8 @@ position:relative;float:right; width:calc(100% - 20px)">
    
    
     <div ng-bind-html="$ctrl.renderHtml($ctrl.data.details)" style="position:relative;float:right; width: calc(100% - 20px);margin:5px;"> diiiv</div>
-    <input type="text"  style="width:150px;">
+    <input type="text" ng-model="message_box" style="width:150px;">
+    <button ng-click="$ctrl.send_message()" ng-disabled="!$ctrl.data.inside"> ارسال</button>
        <br>
   افراد توی پاتوق
        <br>
