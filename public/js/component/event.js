@@ -1,10 +1,8 @@
-angular.module('mainApp').component('currentAffairs',
-				    {templateUrl: 'events.html',
+angular.module('mainApp').component('event',
+				    {templateUrl: 'event.html',bindings:{ data: "="},
 				     controller: function($scope,Info,Auth,$sce){
 					 this.Info=Info;
 					 this.Auth=Auth;
-					 $scope.realTime=function(event){
-					     return Date.parse(event.last_update);};
 				     $scope.renderHtml = function (htmlCode) {
             return $sce.trustAsHtml(htmlCode);
         };

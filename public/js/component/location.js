@@ -1,3 +1,16 @@
+angular.module('mainApp').directive('scroll', function($timeout) {
+  return {
+    restrict: 'A',
+    link: function(scope, element, attr) {
+      scope.$watchCollection(attr.scroll, function(newVal) {
+        $timeout(function() {
+         element[0].scrollTop = element[0].scrollHeight;
+        });
+      });
+    }
+  };
+});
+
 angular.module('mainApp')
     .component('location',
 	       {templateUrl: 'location.html',bindings:{data:"="},
@@ -6,6 +19,9 @@ angular.module('mainApp')
 		    this.renderHtml = function (htmlCode) {
 			return $sce.trustAsHtml(htmlCode);
 		    };
+		    	 $scope.realTime=function(event){
+					     return Date.parse(event.last_update);};
+				  
 
 
 		    this.Auth=Auth;

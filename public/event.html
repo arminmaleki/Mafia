@@ -1,0 +1,44 @@
+
+<div ng-if="$ctrl.data.hash=='saySomething'" style="background-color: #cff;padding:5px; ">
+<span style="margin-left:30px; text-align:right; direction:rtl; font-weight:bold;"> پیام </span>
+<span style="margin-left:30px; text-align:right; direction:rtl;"> 
+<span style="margin-left:30px; text-align:right; direction:rtl; color:red;font-weight:bold;">{{$ctrl.data.a}}</span>
+
+</span>
+
+<span style="margin-left:30px; text-align:right; direction:rtl; "> 
+<span style="margin-left:15px; text-align:right; direction:rtl;">  به </span >
+<span style="margin-left:30px; text-align:right; direction:rtl;color:red;font-weight:bold;">{{$ctrl.data.b}}</span>
+</span>
+
+<div class="message_box">
+<span style="text-align:right; direction:rtl; "> 
+{{$ctrl.data.thing}}
+</span>
+</div>
+</div>
+
+<div ng-if="($ctrl.data.hash=='betSomething') || ($ctrl.data.hash=='betSomethingBetter')" style="background-color: #fcc; padding:5px;">
+<span style="margin-left:30px; text-align:right; direction:rtl; font-weight:bold;"> شرطبندی </span>
+<span style="margin-left:30px; text-align:right; direction:rtl;"> 
+<span style="margin-left:30px; text-align:right; direction:rtl; color:red;font-weight:bold;">{{$ctrl.data.a}}</span>
+
+</span>
+
+<span style="margin-left:30px; text-align:right; direction:rtl; "> 
+<span style="margin-left:15px; text-align:right; direction:rtl;">  با </span >
+<span style="margin-left:30px; text-align:right; direction:rtl;color:red;font-weight:bold;">{{$ctrl.data.b}}</span>
+<span style="margin-left:30px; text-align:right; direction:rtl; "> 
+<span style="margin-left:15px; text-align:right; direction:rtl;">  سر </span >
+<span style="margin-left:10px; text-align:right; direction:rtl;color:red;font-weight:bold;">{{$ctrl.data.thing}}</span>
+<span style="margin-left:10px; text-align:right; direction:rtl;">تومن</span>
+</span>
+<br>
+<span style="margin-left:15px; text-align:right; direction:rtl;">     وضعیت    </span >
+<span style=" text-align:right; direction:rtl;" ng-bind-html="$parent.renderHtml($ctrl.data.status)"></span >
+</div>
+ <!-- {{$ctrl.data.hash}} from {{$ctrl.data.a}} to {{$ctrl.data.b}} message: {{$ctrl.data.thing}} <br>
+$sce.trustAsHtml($ctrl.data.status) -->
+ <div ng-if="($ctrl.data.hash=='messageToGroup') ||($ctrl.data.hash=='enterLocation') || ($ctrl.data.hash=='announce')" style="background-color: #fcc; padding:5px;">
+   <div style=" text-align:right; direction:rtl;" ng-bind-html="$parent.renderHtml($ctrl.data.message)"></div >
+</div>

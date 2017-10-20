@@ -1,14 +1,22 @@
-<div style="background-color: #fcc; padding:5px; direction:rtl; text-align:right;
+<div style="background-color: #fff; padding:5px; direction:rtl; text-align:right;
 
 position:relative;float:right; width:calc(100% - 20px)">
   <span style="font-weight:bold; color: {{$ctrl.toggle_enter_color()}}" >{{$ctrl.data.name}} </span>
   <button ng-click="$ctrl.toggle_more()"> {{$ctrl.toggle_more_text()}}</button>
   <button ng-click="$ctrl.enter_button()"> {{$ctrl.toggle_enter_text()}}</button>
   <br>
-  <div ng-show="$ctrl.data.more" style="position:relative;float:right;width:100%;">
+ 
    
    
-    <div ng-bind-html="$ctrl.renderHtml($ctrl.data.details)" style="position:relative;float:right; width: calc(100% - 20px);margin:5px;"> diiiv</div>
+  <div ng-bind-html="$ctrl.renderHtml($ctrl.data.details)" style="position:relative;float:right; width: calc(100% - 20px);margin:5px;"> diiiv</div>
+  <div ng-show="$ctrl.data.more" style="position:relative;float:right;width:100%;"
+       scroll="$ctrl.info.all_events">
+    <div style="position:relative;max-height:300px;overflow-y:scroll; width: calc(100% - 20px);">
+      <div ng-repeat="event in $ctrl.Info.all_events|filter :{visible: $ctrl.data.group}|  orderBy: realTime track by event.id" style="margin-bottom:2px;direction:rtl;position:relative;">
+	
+<event data="event"> </event>
+      </div>
+      </div>
     <input type="text" ng-model="message_box" style="width:150px;">
     <button ng-click="$ctrl.send_message()" ng-disabled="!$ctrl.data.inside"> ارسال</button>
        <br>

@@ -22,6 +22,8 @@ module Game
 
   #  require_relative 'locations/location'
   require_relative 'locations/casino'
+  require_relative 'locations/dungeon'
+  require_relative 'locations/zoor'
   
   
   
