@@ -16,5 +16,6 @@ require("./component/simplenotif.js");
 require("./component/locations.js");
 require("./component/location.js");
 require("./component/event.js");
+require("./component/binary_task.js");
 // browserify command: browserify --debug mainapp.js -o bundle.js
 

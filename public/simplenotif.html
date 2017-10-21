@@ -1,13 +1,14 @@
-<div style="background-color: #fcc; padding:5px; direction:rtl; text-align:right;">
+<div style="background-color: #fcc; padding:5px; direction:rtl; text-align:right;position:relaitve; float:right; width: calc(100% - 20px)">
 <!--
 would you bet {{$ctrl.data.thing}} dollars with {{$ctrl.data.a}} on a coin flip?
 {{$ctrl.Auth.tocken}}
-<br> -->
+<br> 
 <span style="margin-left:30px; text-align:right; direction:rtl; font-weight:bold;"> توجه </span>
 <br>
 
 <span style="margin-left:30px; text-align:right; direction:rtl;color:red;font-weight:bold;">{{$ctrl.data.message}}</span>
-
+-->
+ <div style=" text-align:right; direction:rtl;" ng-bind-html="$parent.renderHtml($ctrl.data.message)"></div >
 
 <button ng-show="!$ctrl.message_visible" ng-click="$ctrl.accept()"> باشه </button>
 
@@ -15,6 +16,6 @@ would you bet {{$ctrl.data.thing}} dollars with {{$ctrl.data.a}} on a coin flip?
 </div>
 
 
-<div ng-show="$ctrl.message_visible">
+<div ng-show="$ctrl.message_visible" style="position:relative;float:right; width: calc(100% - 20px)"">
  {{$ctrl.message}}
 </div>

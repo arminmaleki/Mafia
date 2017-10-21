@@ -1,5 +1,8 @@
 <div ng-if="$ctrl.Auth.authorized" class="center_box">
+  <div style="position:relative;max-height:600px;overflow-y:scroll; width: calc(100% - 20px);"
+	  scroll="[component.Info.all_events,component.Auth.authorized] " >
 <div ng-repeat="event in $ctrl.Info.all_events|  orderBy: realTime:reverse track by event.id" style="margin-bottom:2px;direction:rtl;">
 <event data="event"> </event>
+</div>
 </div>
 </div>

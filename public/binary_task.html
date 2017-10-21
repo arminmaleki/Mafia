@@ -1,0 +1,14 @@
+<div style="background-color: #fcc; padding:5px; direction:rtl; text-align:right; position:relative;float:right; width: calc(100% - 20px);">
+
+  <!--<div>
+    {{$ctrl.data.message}}
+  </div> -->
+  <div style=" text-align:right; direction:rtl;position:relative;float:right;" ng-bind-html="$parent.renderHtml($ctrl.data.message)"></div >
+<button ng-show="!$ctrl.message_visible" ng-click="$ctrl.accept()"> قبوله </button>
+<button ng-show="!$ctrl.message_visible" ng-click="$ctrl.reject()"> نه </button>
+
+					     
+</div>
+<div ng-show="$ctrl.message_visible" style="position:relative;float:right; width: calc(100% - 20px);">
+ {{$ctrl.message}}
+</div>

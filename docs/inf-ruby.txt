@@ -1,0 +1,4 @@
+start inf-ruby-console-auto from one of the .rb files
+
+for starting the server enter the command
+Thread.new {Server::App.run!}

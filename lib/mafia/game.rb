@@ -19,6 +19,8 @@ module Game
   require_relative 'events/bet_something_better'
   require_relative 'events/notification'
   require_relative 'events/message_to_group'
+  require_relative 'events/god_new_job'
+   require_relative 'events/god_new_job_firuze'
 
   #  require_relative 'locations/location'
   require_relative 'locations/casino'
@@ -195,8 +197,9 @@ module Game
     
     def self.every_second iter
       Login.prune_users
-
-      EventList.each do |id,event|
+      list=EventList.clone
+      
+      list.each do |id,event|
         if event.respond_to? :by_god then
           event.by_god iter
         end

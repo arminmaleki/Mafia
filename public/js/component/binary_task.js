@@ -1,8 +1,7 @@
-angular.module('mainApp').component('simpleNotif',
-				    {templateUrl: 'simplenotif.html',bindings:{data:"="},
+angular.module('mainApp').component('binaryTask',
+				    {templateUrl: 'binary_task.html',bindings:{data:"="},
 				     controller: function($scope,Info,Auth,$http,$timeout){
 					 
-					 console.log("simple-notif");
 					 this.Auth=Auth;
 					 this.Info=Info;
 					 this.decided=false;
@@ -17,14 +16,9 @@ angular.module('mainApp').component('simpleNotif',
 					// req.name=controller.data.name;
 					 req.tocken=Auth.tocken;
 					 this.data_set=false;
-					
 				         this.$onChanges=function(){
 					     if ((controller.data_set==false)&&
-						 controller.hasOwnProperty('data')&&
-						 controller.data!=undefined){
-						  controller.data.seen=false;
-						 console.log("data defined!");
-						 console.log(controller.data);
+						 ("data" in controller)){
 						 controller.data_set=true;
 						 req.name=controller.data.name;
 						 req.id=controller.data.id;
@@ -36,7 +30,7 @@ angular.module('mainApp').component('simpleNotif',
 					     controller.decided=true;
 					     
 					     
-					     req.method="seen";
+					     req.method="accept";
 					     
 					     console.log("accept");
 					     console.log(req);
@@ -48,11 +42,7 @@ angular.module('mainApp').component('simpleNotif',
 						      console.log(res.data);
 						       controller.message=res.data.message;
 						       controller.message=res.data["message"];
-						      controller.message_visible=true;
-						    
-	                                              $timeout(function(){controller.data.seen=true;
-
-				 },7000);
+		 controller.message_visible=true;
 	//	 $timeout(function(){controller.message_visible=false;
 
 	//			 },7000);
@@ -83,7 +73,9 @@ angular.module('mainApp').component('simpleNotif',
 						      controller.message=res.data.message;
 						       controller.message=res.data["message"];
 		 controller.message_visible=true;
-						 
+	//	 $timeout(function(){controller.message_visible=false;
+
+	//			 },7000);
 
 						  },function(res){
 						      console.log("unsuccessful");
@@ -95,4 +87,5 @@ angular.module('mainApp').component('simpleNotif',
                                       				
                                         // this.text=Info.tasks   
 				     }});
+
 
