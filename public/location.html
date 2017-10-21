@@ -10,15 +10,19 @@ position:relative;float:right; width:calc(100% - 20px)">
    
   <div ng-bind-html="$ctrl.renderHtml($ctrl.data.details)" style="position:relative;float:right; width: calc(100% - 20px);margin:5px;"> diiiv</div>
   <div ng-show="$ctrl.data.more" style="position:relative;float:right;width:100%;"
-       scroll="$ctrl.info.all_events">
-    <div style="position:relative;max-height:300px;overflow-y:scroll; width: calc(100% - 20px);">
+      >
+    <div style="position:relative;max-height:300px;overflow-y:scroll; width: calc(100% - 20px);"
+	  scroll="[(component.Info.all_events|filter :{visible: $ctrl.data.group}).length,component.data.more] " >
       <div ng-repeat="event in $ctrl.Info.all_events|filter :{visible: $ctrl.data.group}|  orderBy: realTime track by event.id" style="margin-bottom:2px;direction:rtl;position:relative;">
 	
 <event data="event"> </event>
       </div>
-      </div>
+    </div>
+    <form ng-submit="$ctrl.send_message()">
     <input type="text" ng-model="message_box" style="width:150px;">
-    <button ng-click="$ctrl.send_message()" ng-disabled="!$ctrl.data.inside"> ارسال</button>
+    <button type="submit"  ng-disabled="!$ctrl.data.inside || $ctrl.wait_for_submit"> ارسال</button>
+     <label ng-show="$ctrl.wait_for_submit">پیام ارسال شد</label>
+    </form>
        <br>
   افراد توی پاتوق
        <br>

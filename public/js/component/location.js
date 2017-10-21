@@ -1,7 +1,18 @@
 angular.module('mainApp').directive('scroll', function($timeout) {
   return {
     restrict: 'A',
-    link: function(scope, element, attr) {
+      link: function(scope, element, attr) {
+	  var echo=function(){console.log("Echo!");//console.log(element);
+			      console.log(element[0]);
+			      console.log(element[0].scrollTop);
+			      console.log(element[0].scrollHeight);
+			      console.log(scope.Info);
+			    //  element[0].scrollTop = element[0].scrollHeight;
+
+			     // $timeout(echo,1000);
+			     };
+	  //echo();
+	  $timeout(echo,1000);
       scope.$watchCollection(attr.scroll, function(newVal) {
         $timeout(function() {
          element[0].scrollTop = element[0].scrollHeight;
@@ -26,6 +37,8 @@ angular.module('mainApp')
 
 		    this.Auth=Auth;
 		    this.Info=Info;
+		    //$scope.Info=Info;
+		    $scope.component=this;
 		    $scope.message_box="پیام خود را وارد کنید";
 		    var component=this;
 		    var enter_text="ورود";
@@ -38,6 +51,7 @@ angular.module('mainApp')
 		    this.button_disabled=function(){
 			if (controller.data.inside) return ""; else return "disabled";
 		    };
+		    this.wait_for_submit=false;
 
 		    this.send_message=function(){
 			var req= {"tocken":Auth.tocken,"hash":"messageToGroup"
@@ -46,6 +60,8 @@ angular.module('mainApp')
 			console.log("send_message");
 			console.log(req);
 			$http.post("/register_event",req);
+			component.wait_for_submit=true;
+			$timeout(function(){component.wait_for_submit=false;},10000);
 
 		    };
 		    this.toggle_more_text=function()
