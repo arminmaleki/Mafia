@@ -1,6 +1,6 @@
-<div style="background-color: #fff; padding:5px; direction:rtl; text-align:right;
+<div style="background-color: #fff; padding:10px; direction:rtl; text-align:right;
 
-position:relative;float:right; width:calc(100% - 20px)">
+position:relative;float:right; width:calc(100% - 30px);margin-bottom:10px; box-shadow: 2px 2px 6px rgba(34,34,34,0.6);">
   <span style="font-weight:bold; color: {{$ctrl.toggle_enter_color()}}" >{{$ctrl.data.name}} </span>
   <button ng-click="$ctrl.toggle_more()"> {{$ctrl.toggle_more_text()}}</button>
   <button ng-click="$ctrl.enter_button()"> {{$ctrl.toggle_enter_text()}}</button>
@@ -8,12 +8,12 @@ position:relative;float:right; width:calc(100% - 20px)">
  
    
    
-  <div ng-bind-html="$ctrl.renderHtml($ctrl.data.details)" style="position:relative;float:right; width: calc(100% - 20px);margin:5px;"> diiiv</div>
+  <div ng-bind-html="$ctrl.renderHtml($ctrl.data.details)" style="position:relative;float:right;width:100%;"> diiiv</div>
   <div ng-show="$ctrl.data.more" style="position:relative;float:right;width:100%;"
       >
     <div style="position:relative;max-height:300px;overflow-y:scroll; width: calc(100% - 20px);"
 	  scroll="[(component.Info.all_events|filter :{visible: $ctrl.data.group}).length,component.data.more] " >
-      <div ng-repeat="event in $ctrl.Info.all_events|filter :{visible: $ctrl.data.group}|  orderBy: realTime track by event.id" style="margin-bottom:2px;direction:rtl;position:relative;">
+      <div ng-repeat="event in $ctrl.Info.all_events|filter :{visible: $ctrl.data.group}|  orderBy: realTime track by event.id" style="margin-bottom:2px;direction:rtl;position:relative;" class="fade">
 	
 <event data="event"> </event>
       </div>

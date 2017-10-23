@@ -5,11 +5,13 @@ module Game
   require 'date'
   Max_Wait=30
   EventHash={}
+  JobEvents=[]
   module Enums
     Gender=[:male,:female]
     
   end
   EventList={}
+  require_relative 'god'
   require_relative 'groups'
   require_relative 'events/event'
   require_relative 'events/announce.rb'
@@ -20,7 +22,9 @@ module Game
   require_relative 'events/notification'
   require_relative 'events/message_to_group'
   require_relative 'events/god_new_job'
-   require_relative 'events/god_new_job_firuze'
+  require_relative 'events/god_new_job_firuze'
+  require_relative 'events/god_new_job_shagholam'
+  require_relative 'events/god_dungeon_choke'
 
   #  require_relative 'locations/location'
   require_relative 'locations/casino'
@@ -30,7 +34,7 @@ module Game
   
   
   class Player
-    attr_reader :is_real,:name,:user,:age,:gender,:history
+    attr_reader :is_real,:name,:user,:age,:gender,:history,:tasks
     attr_accessor :resources
     #  include Enums
     @@total=0
@@ -98,12 +102,12 @@ module Game
           $client[:events].find.each do |event|
             eshterak=event[:visible]-(event[:visible]-diff_group)
             
-          if eshterak.size>0 then; events << event ;end
+            if eshterak.size>0 then; events << event ;end
           end
-         
+          
         end
-         login.groups=Groups.all_groups(self)
-          puts "login.groups #{login.groups}"
+        login.groups=Groups.all_groups(self)
+        puts "login.groups #{login.groups}"
 
         Game::Locations::LocationHash.each do |hash,desc|
           if (desc[:last_update]> time) then
@@ -176,35 +180,6 @@ module Game
       @last_check_time=Time.new
       #puts @user+" "+@last_check_time.to_s
 
-    end
-  end
-  module God
-    module Login
-      def self.prune_users
-        time=Time.new
-        kill_list=[]
-        Game::Login.by_user.keys.each do |user|
-          if (time-Game::Login.by_user[user].last_check_time > Max_Wait) then
-            kill_list << user
-          end
-        end
-        kill_list.each do |user|
-          Game::Login.by_user.delete(user)
-          $log.debug("#{__FILE__} , #{__LINE__} user #{user} logged out")
-        end
-      end
-    end
-    
-    def self.every_second iter
-      Login.prune_users
-      list=EventList.clone
-      
-      list.each do |id,event|
-        if event.respond_to? :by_god then
-          event.by_god iter
-        end
-      end
-      
     end
   end
 end

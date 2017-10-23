@@ -1,6 +1,6 @@
 
 console.log("here public!");
-app=angular.module('mainApp',[]);
+app=angular.module('mainApp',['ngAnimate']);
 message="messaaaage";
 require("./service/auth.js");
 require("./service/info.js");

@@ -42,7 +42,14 @@ module Game
       end
       def self.by_god iter, options
         if iter%20 ==0 then
-          puts "user #{options[:user]} is inside casino"
+          puts "user #{options[:user]} is inside dungeon"
+          luck=Random.rand 1000
+          if luck > 1000-500 then
+            puts "#{options[:user]} in Dungeon Choking the Pirzan!"
+            if (not Game::GodDungeonChoke.waiting.include? options[:user]) then
+              Game::GodDungeonChoke.new({user:options[:user]},:commit)
+            end
+          end
         end
       end
       

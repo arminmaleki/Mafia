@@ -27,3 +27,27 @@ html, body
 .center_box{background-color: #fff; position:relative;float:right; padding:20px; margin:5px; width:calc(100% - 140px);	 margin-right: 50px;}
 .message_box{background-color:white;padding:5px;margin:2px;}
 .user_span{color:red; font-weight:bold; margin-left:10px; margin-right:10px;}
+.fade.ng-enter {
+  transition:1s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+}
+.fade.ng-leave {
+  transition:1s linear all;
+  opacity:1;
+}
+.fade.ng-leave.ng-leave-active {
+  opacity:0;
+}
+.fade.ng-hide {
+  transition:1s linear all;
+  opacity:0;
+}
+.fade.ng-move {
+  transition:1s linear all;
+}
+.fade.ng-animate { background-color: red;}

@@ -5,6 +5,7 @@ class Notification < Event
     def self.stateless; false; end
       def self.hash; "notification"; end
       Game::EventHash[self.hash]=self
+      def self.visible o; [] ; end
         def initialize(o,commit,child_self=Notification)
       
      

@@ -42,7 +42,9 @@ angular.module('mainApp').component('binaryTask',
 						      console.log(res.data);
 						       controller.message=res.data.message;
 						       controller.message=res.data["message"];
-		 controller.message_visible=true;
+						      controller.message_visible=true;
+						      if (res.data.message!="شما پذیرفتید")
+							  $timeout(function(){controller.decided=false; controller.message_visible=false; },5000);
 	//	 $timeout(function(){controller.message_visible=false;
 
 	//			 },7000);

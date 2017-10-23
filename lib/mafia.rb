@@ -32,7 +32,7 @@ o={b:'armin',a:'hanna',thing:'10'}
 o={user: "armin",  location: "casino"}
 puts "Enter Location condition:"+Game::EnterLocation.condition(o).to_s
 #Game::EnterLocation.new(o,:commit)
-#Game::GodNewJob.new({user:"armin"}, :commit)
+#Game::GodNewJobFiruze.new({user:"armin"}, :commit)
 
 $log.debug("#{__FILE__} , #{__LINE__} total open events: #{Game::EventList.size}");
 def start_God

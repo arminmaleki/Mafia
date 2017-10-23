@@ -1,5 +1,7 @@
 
-<div ng-if="$ctrl.data.hash=='saySomething'" style="background-color: #cff;padding:5px; ">
+<div ng-if="$ctrl.data.hash=='saySomething'" style="background-color: #fff;padding:10px;margin:5px;
+
+margin-bottom:10px; box-shadow: 2px 2px 6px rgba(34,34,34,0.6); ">
 <span style="margin-left:30px; text-align:right; direction:rtl; font-weight:bold;"> پیام </span>
 <span style="margin-left:30px; text-align:right; direction:rtl;"> 
 <span style="margin-left:30px; text-align:right; direction:rtl; color:red;font-weight:bold;">{{$ctrl.data.a}}</span>
@@ -18,7 +20,7 @@
 </div>
 </div>
 
-<div ng-if="($ctrl.data.hash=='betSomething') || ($ctrl.data.hash=='betSomethingBetter')" style="background-color: #fcc; padding:5px;">
+<div ng-if="($ctrl.data.hash=='betSomething') || ($ctrl.data.hash=='betSomethingBetter')" style="background-color: #fff; padding:10px;margin:5px;margin-bottom:10px; box-shadow: 2px 2px 6px rgba(34,34,34,0.6);">
 <span style="margin-left:30px; text-align:right; direction:rtl; font-weight:bold;"> شرطبندی </span>
 <span style="margin-left:30px; text-align:right; direction:rtl;"> 
 <span style="margin-left:30px; text-align:right; direction:rtl; color:red;font-weight:bold;">{{$ctrl.data.a}}</span>
@@ -39,6 +41,6 @@
 </div>
  <!-- {{$ctrl.data.hash}} from {{$ctrl.data.a}} to {{$ctrl.data.b}} message: {{$ctrl.data.thing}} <br>
 $sce.trustAsHtml($ctrl.data.status) -->
- <div ng-if="($ctrl.data.hash=='messageToGroup') ||($ctrl.data.hash=='enterLocation') || ($ctrl.data.hash=='announce')" style="background-color: #fcc; padding:5px;">
+ <div ng-if="($ctrl.data.hash=='messageToGroup') ||($ctrl.data.hash=='enterLocation') || ($ctrl.data.hash=='announce')" style="background-color: #fff; padding:10px;margin:5px;margin-bottom:10px; box-shadow: 2px 2px 6px rgba(34,34,34,0.6);">
    <div style=" text-align:right; direction:rtl;" ng-bind-html="$parent.renderHtml($ctrl.data.message)"></div >
 </div>

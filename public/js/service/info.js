@@ -87,9 +87,11 @@ app.service('Info',function($http,$timeout,Auth,$rootScope){
 
 
 			 if (Object.keys(res.data.info.tasks).length>0 ) console.log("TASKS:");
+			
 			 console.log(res.data.info.tasks);
 			 var new_tasks=res.data.info.tasks;
 			 Object.keys(new_tasks).forEach(function(task_id){
+			     if (!service.tasks[task_id])  $rootScope.$broadcast('new task');
 			     service.tasks[task_id]=new_tasks[task_id]; console.log(new_tasks[task_id]);});
 
 

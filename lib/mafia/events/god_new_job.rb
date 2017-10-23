@@ -11,10 +11,15 @@ module Game
     def self.job_time; 0; end
     def self.job_rep; 0; end
      def self.job_firability; 100; end
-    Game::EventHash[self.hash]=self
+     Game::EventHash[self.hash]=self
+     class << self
+       attr_accessor :waiting
+     end
+     self.waiting=[]
     def initialize(o,commit,child_self=GodNewJob)
       o[:accepted]="not yet"
       $log.debug("#{__FILE__} , #{__LINE__} initialized GodNewJob")
+      
       super(o,commit,child_self)
       message=""
       message+=child_self.job_name
@@ -54,7 +59,8 @@ module Game
       Game::Player.players[@options[:user]].remove_task @id
       Database.update_time(@options[:id])
       Player.players[@options[:user]].resources[:freetime]-=child_self.job_time
-       Player.players[@options[:user]].resources[:reputation]+=child_self.job_rep
+      Player.players[@options[:user]].resources[:reputation]+=child_self.job_rep
+       child_self.waiting.delete @options[:user]
       "شما پذیرفتید"
       
     end
@@ -63,7 +69,8 @@ module Game
     #  Notification.new({to: @options[:user],message: notif,auth:"BetSomethingBetter#reject"},:commit)
         Game::EventList.delete @id
         Database::close_event @id
-         Game::Player.players[@options[:user]].remove_task @id
+        Game::Player.players[@options[:user]].remove_task @id
+         child_self.waiting.delete @options[:user]
         "شما نپذیرفتید"
     end
     def finally

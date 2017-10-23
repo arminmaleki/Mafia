@@ -1,4 +1,4 @@
-<div style="background-color: #fcc; padding:5px; direction:rtl; text-align:right;position:relaitve; float:right; width: calc(100% - 20px)">
+<div style="background-color: #fff; padding:10px; direction:rtl; text-align:right;position:relaitve; float:right; width: calc(100% - 30px);margin:2px;margin-bottom:10px; box-shadow: 2px 2px 6px rgba(34,34,34,0.6);">
 <!--
 would you bet {{$ctrl.data.thing}} dollars with {{$ctrl.data.a}} on a coin flip?
 {{$ctrl.Auth.tocken}}
@@ -8,9 +8,9 @@ would you bet {{$ctrl.data.thing}} dollars with {{$ctrl.data.a}} on a coin flip?
 
 <span style="margin-left:30px; text-align:right; direction:rtl;color:red;font-weight:bold;">{{$ctrl.data.message}}</span>
 -->
- <div style=" text-align:right; direction:rtl;" ng-bind-html="$parent.renderHtml($ctrl.data.message)"></div >
+ <div style=" text-align:right; direction:rtl;position:relative;float:right;" ng-bind-html="$parent.renderHtml($ctrl.data.message)"></div >
 
-<button ng-show="!$ctrl.message_visible" ng-click="$ctrl.accept()"> باشه </button>
+<button ng-show="!$ctrl.message_visible" ng-click="$ctrl.accept()" ng-animate="'animate'"> باشه </button>
 
 					     
 </div>
