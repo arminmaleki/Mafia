@@ -121,7 +121,9 @@ module Game
           end
         end
         
-        $log.debug("#{__FILE__}#{__LINE__} updated locations: #{locations}")
+        if (locations.size >0 ) then
+          $log.debug("#{__FILE__}#{__LINE__} updated locations: #{locations}")
+        end
         
         @tasks.each do |id,task|
           if (task[:time] > time) then

@@ -15,10 +15,10 @@ html, body
     width:calc(100% - 40px); min-height:60px;position:relative; background-color: #eee;
     text-align:right;padding:20px;
 }
-.right_col {width:200px;height:calc(100% - 150px);position:relative; float: right; background-color:#fff;text-align:right;}
+.right_col {width:250px;height:calc(100% - 150px);position:relative; float: right; background-color:#fff;text-align:right;}
 .center_col {width:calc(50% - 100px);height:calc(100% - 150px);position:relative; float: right; background-color:#fff;text-align:right;}
-.left_col {width:calc(50% - 100px);height:calc(100% - 150px);position:relative; float: right; background-color:#fff;text-align:right;}
-.status {width:100%; height:300px; position:relative;float:right; background-color:#fff;text-align:right;}
+.left_col {width:calc(50% - 150px);height:calc(100% - 150px);position:relative; float: right; background-color:#fff;text-align:right;}
+.status {width:100%;  position:relative;float:right; background-color:#fff;text-align:right;}
 .player_list{width:100%; height:calc(100% - 300px); position:relative;float:right;background-color:#fff;text-align:right;}
 .list_menu{width:100%;height:30pt; position:relative; float:right; background-color:#ccc; text-align:right;color:#000;}
 .left_list{width:100%;height:calc(100% - 30pt); position:relative; float:right; background-color:#fff; text-align:right;}
@@ -51,3 +51,23 @@ html, body
   transition:1s linear all;
 }
 .fade.ng-animate { background-color: red;}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    
+    background-color: #ccc;
+      text-align: right;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

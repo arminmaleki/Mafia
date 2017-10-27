@@ -1,6 +1,58 @@
 <div  style="text-align:left; padding:10px; float:right;position:relative; background-color:#fff; margin:10px; width: calc(100% - 60px);">
 <h2 style="text-align:center"> بازیکنان آنلاین</h2>
+<div ng-repeat="online in $ctrl.Info.online_players|filter :{status:'online'}">
+  <div class="tooltip" style="display:inline-block" >
+    <img ng-src="img/{{online.gender}}.jpg" style="width:15px" ></img>
+   {{online.user}}  {{online.score}}
+    <div class="tooltiptext" style="width:170px;">
+      <div style="position:relative;width:100%;float:right;">
+      <img src="img/profile_{{online.resources.img}}.jpg" style="width:30px;max-height:200px position:relative;float:left;">  </img>
+      {{online.resources.job_farsi}}
+      <br>
+      {{online.resources.acc_farsi}}
+      </div>
+      <div style="position:relative;float:left; width:100%; text-align:left;">
+<img ng-src="img/money.png" style="width:15px" ></img>
+{{online.resources.money}}
+<img ng-src="img/reputation.png" style="width:15px" ></img>
+{{online.resources.reputation}}
+<img ng-src="img/strength.png" style="width:15px" ></img>
+{{online.resources.strength}}
+<img ng-src="img/skill.png" style="width:15px" ></img>
+{{online.resources.skill}}
+</div>
+</div>
+  </div>
+  
+<br>
+</div>
+<br>
+<br>
+<h2 style="text-align:center">رنکینگ</h2>
 <div ng-repeat="online in $ctrl.Info.online_players">
-<img ng-src="img/{{online.gender}}.jpg" style="width:30px" ></img>{{online.name}}  <br>
+  <div class="tooltip" style="display:inline-block" >
+    <img ng-src="img/{{online.gender}}.jpg" style="width:15px" ></img>
+   {{$index+1}}-{{online.user}}  {{online.score}}
+    <div class="tooltiptext" style="width:170px;">
+      <div style="position:relative;width:100%;float:right;">
+      <img src="img/profile_{{online.resources.img}}.jpg" style="width:30px;max-height:200px position:relative;float:left;">  </img>
+      {{online.resources.job_farsi}}
+      <br>
+      {{online.resources.acc_farsi}}
+      </div>
+      <div style="position:relative;float:left; width:100%; text-align:left;">
+<img ng-src="img/money.png" style="width:15px" ></img>
+{{online.resources.money}}
+<img ng-src="img/reputation.png" style="width:15px" ></img>
+{{online.resources.reputation}}
+<img ng-src="img/strength.png" style="width:15px" ></img>
+{{online.resources.strength}}
+<img ng-src="img/skill.png" style="width:15px" ></img>
+{{online.resources.skill}}
+</div>
+</div>
+  </div>
+  
+<br>
 </div>
 </div>

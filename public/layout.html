@@ -10,7 +10,7 @@
     </div>
     <div class="right_col">
       <div class="status">
-    
+
 	<user-status></user-status>
       </div>
       <div class="player_list" ng-controller="basic">
@@ -19,11 +19,11 @@
       </div>
     </div>
     <div class="center_col" ng-controller="basic">
-       <div id="login" >             
-   
+       <div id="login" >
+
    <span ng-bind-html=" $sce.trustAsHtml(working)"></span>
-      
-      	<form ng-if="!Auth.authorized" name="loginForm" style="background-color: #fff; position:relative;float:right; padding:20px; magin:20px; width:calc(100% - 140px);margin-top:30px;	 margin-right: 50px;" 
+
+      	<form ng-if="!Auth.authorized" name="loginForm" style="background-color: #fff; position:relative;float:right; padding:20px; magin:20px; width:calc(100% - 140px);margin-top:30px;	 margin-right: 50px;"
       ng-submit="login(credentials)" novalidate>
 
   <label for="username">Username:</label>
@@ -38,7 +38,7 @@
 
 	</form>
        </div>
-<div ng-show="Auth.authorized" class="center_box" > 
+<div ng-show="Auth.authorized" class="center_box" >
 <div ng-click="show='tasks'" class="menu_item" ng-mouseenter="mousetoggle('tasks')" ng-mouseleave="mousetoggle('tasks')" style="background-color: {{background('tasks')}}"> درخواستها </div>
 <div ng-click="show='actions'" class="menu_item" ng-mouseenter="mousetoggle('actions')" ng-mouseleave="mousetoggle('actions')" style="background-color: {{background('actions')}}"> کنشها </div>
 <div ng-click="show='events'" class="menu_item"ng-mouseenter="mousetoggle('events')" ng-mouseleave="mousetoggle('events')" style="background-color: {{background('events')}}"> رویدادها </div>
@@ -46,7 +46,7 @@
 </div>
 
 <div ng-show="show=='events'">
-       
+
        <current-affairs></current-affairs>
 </div>
 <div ng-show="show=='actions'">
@@ -56,6 +56,7 @@
 <div ng-show="show=='tasks'">
 <tasks></tasks>
 </div>
+
        <!--<say-something>say</say-something>
        <bet-something>bet</bet-something>
 <tasks>tasks</tasks> -->
@@ -68,14 +69,14 @@
      <!-- <div class="list_menu"> منوی فهرست ها</div>
       <div class="left_list">فهرست ها</div> -->
     </div>
-   
+
     <script
 src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
     </script>
-    
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
 
      <script src="./js/bundle.js"></script>
   </body>
-  
+
 </html>

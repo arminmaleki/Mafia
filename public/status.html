@@ -1,11 +1,40 @@
 <div style= "text-align:right; padding:10px; float:right;position:relative; background-color:#fff; margin:10px; ">
 <img src="img/profile_{{$ctrl.Info.resources.img}}.jpg" style="width:100px;max-height:200px">  </img>
-<div ng-if="$ctrl.Auth.authorized"  >
-  {{$ctrl.username}}   :نام کاربری<br>
-  {{$ctrl.Info.resources.money}}  :پول تو جیبی<br>
-  {{$ctrl.Info.resources.reputation}}   :بچه معروفی<br>
-  {{$ctrl.Info.resources.freetime}}   :وقت آزاد<br>
-  شغل
-   {{$ctrl.Info.resources.job_farsi}}  
+<div ng-if="$ctrl.Auth.authorized" style="direction:rtl" >
+ 
+  <span style="float:right;font-weight:bold;"> {{$ctrl.username}} </span>
+  <br>
+   <div style="position:relaltive;float:right;clear:right;">
+  <span style="float:right;width:110px">امتیاز کل </span>
+  <span style="float:right"> {{$ctrl.Info.resources.money+$ctrl.Info.resources.reputation+$ctrl.Info.resources.skill+$ctrl.Info.resources.strength}} </span>
+   </div>
+   <div style="position:relaltive;float:right;clear:right;">
+  <span style="float:right;width:110px">شغل </span>
+  <span style="float:right"> {{$ctrl.Info.resources.job_farsi}} </span>
+   </div>
+    <div style="position:relaltive;float:right;clear:right;">
+  <span style="float:right;width:110px">مسکن </span>
+  <span style="float:right"> {{$ctrl.Info.resources.acc_farsi}} </span>
+  </div>
+  <div style="position:relaltive;float:right;clear:right;">
+  <img ng-src="img/money.png" style="float:right;width:25px;margin-left:5px;" ></img>
+  <span style="float:right;width:100px">   پول تو جیبی </span>
+  <span style="float:right"> {{$ctrl.Info.resources.money}} </span>
+  </div><div style="position:relaltive;float:right;clear:right;">
+   <img ng-src="img/reputation.png" style="float:right;width:25px;margin-left:5px;" ></img>
+  <span style="float:right;width:100px">  بچه معروفی </span>
+  <span style="float:right"> {{$ctrl.Info.resources.reputation}} </span>
+  </div><div style="position:relaltive;float:right;clear:right;">
+   <img ng-src="img/strength.png" style="float:right;width:25px;margin-left:5px;" ></img>
+  <span style="float:right;width:100px"> زوربازو</span>
+  <span style="float:right"> {{$ctrl.Info.resources.strength}} </span>
+  </div><div style="position:relaltive;float:right;clear:right;">
+   <img ng-src="img/skill.png" style="float:right;width:25px;margin-left:5px;" ></img>
+  <span style="float:right;width:100px"> مهارت </span>
+  <span style="float:right"> {{$ctrl.Info.resources.skill}} </span>
+  </div>
+ 
+  
+ 
 </div>
 </div>

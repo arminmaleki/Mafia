@@ -67,16 +67,30 @@ App.post '/update' do
   online=[]
   code=Enum::Update[:not_logged_in]
   #time=Time.new
-  Game::Login.by_user.keys.each do |user|
+  # Game::Login.by_user.keys.each do |user|
+  Game::Player.players.keys.each do |user|
     o={}
   # $log.debug("#{__FILE__} , #{__LINE__} /update user is #{user}")
    
- #  $log.debug("#{__FILE__} , #{__LINE__} #{Game::Player.players[user]}")
+    #  $log.debug("#{__FILE__} , #{__LINE__} #{Game::Player.players[user]}")
+    p=Game::Player.players[user]
     o[:user]=user.to_s
-    o[:name]=Game::Player.players[user].name
-    o[:gender]=Game::Player.players[user].gender
+    o[:name]=p.name
+    o[:gender]=p.gender
+    o[:groups]=Groups.all_groups(p)
+    o[:resources]=p.resources
+    o[:score]=p.resources[:money]+p.resources[:skill]+p.resources[:strength]+p.resources[:reputation]
+ 
+    
+
+    if Game::Login.by_user.key? user then
+      o[:status]="online"
+    else
+      o[:status]="offline"
+      end
     online.push(o)
   end
+  online=online.sort_by {|p| -p[:score]}
  # puts online
   
   data=JSON.parse(request.body.read,:symbolize_names => true)
