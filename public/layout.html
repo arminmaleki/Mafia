@@ -8,6 +8,7 @@
     <div class="header">
      <h1>به مافیا خوش آمدید</h1>
     </div>
+    
     <div class="right_col">
       <div class="status">
 
@@ -20,8 +21,12 @@
     </div>
     <div class="center_col" ng-controller="basic">
        <div id="login" >
-
-   <span ng-bind-html=" $sce.trustAsHtml(working)"></span>
+ <!--        <h2> here! </h2>
+	 
+         <html-render  html="<p> here is {{Info}}</p> "></html-render>
+	 
+	  <span ng-bind-html=" renderHtml('<h2> hello! </h2>')"></span>
+ -->
 
       	<form ng-if="!Auth.authorized" name="loginForm" style="background-color: #fff; position:relative;float:right; padding:20px; magin:20px; width:calc(100% - 140px);margin-top:30px;	 margin-right: 50px;"
       ng-submit="login(credentials)" novalidate>
@@ -47,14 +52,14 @@
 
 <div ng-show="show=='events'">
 
-       <current-affairs></current-affairs>
+       <current-affairs value="show" ></current-affairs>
 </div>
 <div ng-show="show=='actions'">
 <say-something></say-something>
        <bet-something ng-if="Info.groups.indexOf(':casino')>=0"></bet-something>
 </div>
 <div ng-show="show=='tasks'">
-<tasks></tasks>
+<tasks value="show"></tasks>
 </div>
 
        <!--<say-something>say</say-something>

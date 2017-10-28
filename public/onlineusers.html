@@ -1,4 +1,4 @@
-<div  style="text-align:left; padding:10px; float:right;position:relative; background-color:#fff; margin:10px; width: calc(100% - 60px);">
+<div  style="text-align:left; padding:10px; float:right;position:relative; background-color:#fff; margin:10px; width: calc(100% - 60px);  box-shadow: 2px 2px 6px rgba(34,34,34,0.6);">
 <h2 style="text-align:center"> بازیکنان آنلاین</h2>
 <div ng-repeat="online in $ctrl.Info.online_players|filter :{status:'online'}">
   <div class="tooltip" style="display:inline-block" >
@@ -6,7 +6,7 @@
    {{online.user}}  {{online.score}}
     <div class="tooltiptext" style="width:170px;">
       <div style="position:relative;width:100%;float:right;">
-      <img src="img/profile_{{online.resources.img}}.jpg" style="width:30px;max-height:200px position:relative;float:left;">  </img>
+      <img src="img/profile_{{online.resources.img}}.jpg" style="width:50px;max-height:200px position:relative;float:left;">  </img>
       {{online.resources.job_farsi}}
       <br>
       {{online.resources.acc_farsi}}
@@ -35,7 +35,7 @@
    {{$index+1}}-{{online.user}}  {{online.score}}
     <div class="tooltiptext" style="width:170px;">
       <div style="position:relative;width:100%;float:right;">
-      <img src="img/profile_{{online.resources.img}}.jpg" style="width:30px;max-height:200px position:relative;float:left;">  </img>
+      <img src="img/profile_{{online.resources.img}}.jpg" style="width:50px;max-height:200px position:relative;float:left;">  </img>
       {{online.resources.job_farsi}}
       <br>
       {{online.resources.acc_farsi}}

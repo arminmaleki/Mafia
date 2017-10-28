@@ -1,21 +1,22 @@
-<div style= "text-align:right; padding:10px; float:right;position:relative; background-color:#fff; margin:10px; ">
+<div style= "text-align:right; padding:10px; float:right;position:relative; background-color:#fff; margin:10px;  box-shadow: 2px 2px 6px rgba(34,34,34,0.6); width:calc(100% - 60px); ">
 <img src="img/profile_{{$ctrl.Info.resources.img}}.jpg" style="width:100px;max-height:200px">  </img>
 <div ng-if="$ctrl.Auth.authorized" style="direction:rtl" >
  
   <span style="float:right;font-weight:bold;"> {{$ctrl.username}} </span>
   <br>
+   
    <div style="position:relaltive;float:right;clear:right;">
-  <span style="float:right;width:110px">امتیاز کل </span>
-  <span style="float:right"> {{$ctrl.Info.resources.money+$ctrl.Info.resources.reputation+$ctrl.Info.resources.skill+$ctrl.Info.resources.strength}} </span>
-   </div>
-   <div style="position:relaltive;float:right;clear:right;">
-  <span style="float:right;width:110px">شغل </span>
+ 
   <span style="float:right"> {{$ctrl.Info.resources.job_farsi}} </span>
    </div>
     <div style="position:relaltive;float:right;clear:right;">
-  <span style="float:right;width:110px">مسکن </span>
+
   <span style="float:right"> {{$ctrl.Info.resources.acc_farsi}} </span>
-  </div>
+    </div>
+    <div style="position:relaltive;float:right;clear:right;">
+  <span style="float:right;width:110px">امتیاز کل </span>
+  <span style="float:right"> {{$ctrl.Info.resources.money+$ctrl.Info.resources.reputation+$ctrl.Info.resources.skill+$ctrl.Info.resources.strength}} </span>
+   </div>
   <div style="position:relaltive;float:right;clear:right;">
   <img ng-src="img/money.png" style="float:right;width:25px;margin-left:5px;" ></img>
   <span style="float:right;width:100px">   پول تو جیبی </span>
@@ -32,6 +33,11 @@
    <img ng-src="img/skill.png" style="float:right;width:25px;margin-left:5px;" ></img>
   <span style="float:right;width:100px"> مهارت </span>
   <span style="float:right"> {{$ctrl.Info.resources.skill}} </span>
+  </div>
+  <div style="position:relaltive;float:right;clear:right;">
+   <img ng-src="img/clock.png" style="float:right;width:25px;margin-left:5px;" ></img>
+  <span style="float:right;width:100px">وقت آزاد </span>
+  <span style="float:right"> {{$ctrl.Info.resources.freetime}} </span>
   </div>
  
   

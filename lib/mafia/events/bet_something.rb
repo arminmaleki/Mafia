@@ -4,7 +4,7 @@ class BetSomething < SaySomething
     def self.requirements; o=SaySomething.requirements.clone; o[:thing]="number"; o end
     def self.stateless; false; end
     def self.hash; "betSomething"; end
-    def self.visible(o); ":all"; end
+    def self.visible(o); [":all"]; end
      Game::EventHash[self.hash]=self
       def self.message_lose(q) 
       message=" شما"+q.to_s + " تومان باختید"

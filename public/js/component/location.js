@@ -12,10 +12,15 @@ angular.module('mainApp').directive('scroll', function($timeout) {
 			     // $timeout(echo,1000);
 			     };
 	  //echo();
-	  $timeout(echo,1000);
-      scope.$watchCollection(attr.scroll, function(newVal) {
+	  $timeout(echo,2000);
+	   element[0].scrollTop = element[0].scrollHeight;
+      scope.$watch(attr.scroll, function(newVal) {
         $timeout(function() {
-         element[0].scrollTop = element[0].scrollHeight;
+            element[0].scrollTop = element[0].scrollHeight;
+	    console.log("Scroll update!");
+	    console.log(element[0].scrollTop);
+	    console.log(element[0].scrollHeight);
+	    console.log(element[0]);
         });
       });
     }

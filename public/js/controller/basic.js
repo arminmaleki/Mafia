@@ -3,6 +3,20 @@ app.filter("trust", ['$sce', function($sce) {
     return $sce.trustAsHtml(htmlCode);
   };
 }]);
+app.directive('htmlRender', function($compile) {
+  return {
+    restrict: 'E',
+    scope: { html: '@' },
+    link: function(scope, element) {
+      scope.$watch('html', function(value) {
+        if (!value) return;
+
+        var markup = $compile(value)(scope);
+        element.append(markup);
+      });
+    }
+  };
+});
 app.controller('basic',function ($rootScope,$scope,$http,Auth,Info,$sce){
     // Info.update();
     $scope.renderHtml = function (htmlCode) {
